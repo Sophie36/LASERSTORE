@@ -1,0 +1,522 @@
+<meta charset="utf-8" />                  
+	<style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>     
+	<script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+		<h2 id="h2produit">Caractéristiques</h2>
+			<ul id="ulproduit">
+				<li id="liproduit">Multifonction 4 en 1 recto verso A3</li>
+				<br />
+				<li id="liproduit">Vitesse élevée de 18 ppm</li>
+				<br />
+				<li id="liproduit">Capacité de 500 feuilles</li>
+			</ul>
+<br /><br /><br /><br /><br />
+		<h2 id="h2produit"> Présentation </h2>
+			<p>Cette imprimante A3 professionnelle possédant une connectivité Wi-Fi et Ethernet est idéale si vous avez besoin de créer rapidement un large choix de documents A3, car elle propose une vitesse d'impression de qualité professionnelle pouvant atteindre 18 ppm et est dotée d'un écran tactile de 10,9 cm. Deux bacs papier à chargement frontal de 250 feuilles vous permettent d'imprimer des documents A3 et A4, tandis que la cartouche d'encre noire haute capacité possède un rendement d'environ 2 200 pages.<br /><br /></p>
+		<h3 id="h3produit">Multifonction 4 en 1 recto verso A3 </h3>
+			<p>Cette imprimante professionnelle est équipée d'un chargeur automatique de documents de 35 feuilles et de fonctionnalités d'impression, de numérisation, de copie et de fax A3 recto verso. En plus des deux bacs papier à chargement frontal, le chemin papier arrière pour supports spéciaux vous permet d'imprimer sur un large choix de supports plus épais (papier, enveloppe ou étiquette) afin de satisfaire tous vos besoins professionnels.</p>
+			<br />
+		<h3 id="h3produit">Impression mobile</h3>
+			<p>Epson Connect vous permet d'imprimer d'importants documents professionnels depuis un smartphone ou une tablette. Vous pouvez également imprimer depuis n'importe où dans le monde grâce à l'envoi direct de fichiers par e-mail à l'imprimante, ainsi que stocker des documents numérisés dans les services de cloud. Cette imprimante est en outre compatible avec Google Cloud Print et Apple AirPrint. La fonction Wi-Fi Direct vous permet d'imprimer facilement depuis des appareils sans fil sans devoir vous connecter à un routeur Wi-Fi, offrant ainsi une plus grande flexibilité.</p>
+			<br />
+		<h3 id="h3produit">Nouvelle tête d'impression</h3>
+			<p>PrecisionCore, la technologie d'Epson la plus avancée en matière tête d'impression, offre la meilleure qualité d'impression et la meilleure durabilité du marché, pour lesquelles Epson est réputée, aux vitesses élevées requises dans les entreprises, les commerces et les industries.</p>
+			<br />
+		<h3 id="h3produit">Encre durable</h3>
+			<p>L'encre DURABrite Ultra d'Epson est idéale pour créer des documents professionnels de qualité laser. Les documents sont ainsi résistants à l'eau, au maculage et aux surligneurs, tandis que ses capacités de séchage rapide sont idéales pour l'impression recto verso. Disponibles en taille 27XXL, 27XL et standard, ces cartouches d'encre séparées haute capacité permettent de réaliser d'importantes économies, grâce à un coût par page 50 % moins élevé que sur les imprimantes laser concurrentes.</p>
+			<br />
+		<h2 id="h2produit">Caractéristiques techniques </h2>
+			<br />
+<div id="tabs-table">
+	<div id="tabs">
+		<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span> Informations générales </span></div>
+		<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span> Technologie </span></div>
+		<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span> Impression </span></div>
+		<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Numérisation</span></div>
+		<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Fax</span></div>
+	<br />
+		<div id="choix7" onclick="toggle_div('contentTable6'); newid(this)"><span>Connectivité</span></div>
+		<div id="choix8" onclick="toggle_div('contentTable7'); newid(this)"><span>Gestion du papier</span></div>
+		<div id="choix9" onclick="toggle_div('contentTable8'); newid(this)"><span>Autres</span></div>
+	</div>
+	<div id="table">
+		<div id="contentTable1" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%"> Informations générales </th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%"> Consommation d'énergie </td>
+						<td id="td1" width="80%">8,5 W Prêt, 0,3 W (éteindre),  Certifiée ENERGY STAR®, 19 W (copie autonome, norme ISO/IEC 24712), 1,7 W (mode veille)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Dimensions du produit</td>
+						<td id="td2" width="80%">567‎ x 486 x 418 mm (Largeur x Profondeur x Hauteur)</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Poids du produit</td>
+						<td id="td1" width="80%">21,7 kg</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Systèmes d'exploitation compatibles</td>
+						<td id="td2" width="80%">Mac OS 10.5.8 ou version ultérieure, Windows 7, Windows 7 x64, Windows 8, Windows 8 (32/64 bits), Windows Server 2003 (32/64 bits), Windows Server 2008 (32/64 bits), Windows Server 2008 R2, Windows Server 2012 (64bit), Windows Vista, Windows Vista x64, Windows XP, Windows XP x64, Windows server 2003 R2</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Alimentation électrique</td>
+						<td id="td1" width="80%">240V</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Contenu de la Boîte</td>
+						<td id="td2" width="80%">Manuel sur CD, Pilote et programmes d’aide (CD), Cartouches d'encre séparées, Appareil principal, Câble électrique, Guide de démarrage rapide, Logiciel (CD), Document de garantie</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable2" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Technologie</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Mode d'impression</td>
+						<td id="td1" width="80%"> Tête d'impression PrecisionCore'</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Configuration des buses</td>
+						<td id="td2" width="80%">800 buses noir, 256 Buses par couleur</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Taille de goutte minimale</td>
+						<td id="td1" width="80%">2,8 pl, Avec la technologie à taille de point variable</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Technologie de l'encre</td>
+						<td id="td2" width="80%">DURABrite™ Ultra</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Catégorie</td>
+						<td id="td1" width="80%">Emplacement individuel, Groupe de travail</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Multifonction</td>
+						<td id="td2" width="80%">Impression, Numérisation, Copie, Télécopie</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable3" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Impression</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Vitesse d'impression ISO/IEC 24734</td>
+						<td id="td1" width="80%">18 pages/min Monochrome, 10 pages/min Couleur</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Vitesse d'impression recto verso ISO/IEC 24734</td>
+						<td id="td2" width="80%">8,7 pages A4/min. Monochrome, 6 pages A4/min. Couleur</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Vitesse d'impression</td>
+						<td id="td1" width="80%">20 pages/min Couleur (papier ordinaire), 32 pages/min Monochrome (papier ordinaire)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Résolution de l'impression</td>
+						<td id="td2" width="80%">4.800 x 2.400 DPI (ppp)</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Cycle d'utilisation maximal</td>
+						<td id="td1" width="80%">20.000 pages par mois</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Couleurs</td>
+						<td id="td2" width="80%">Noir, Cyan, Jaune, Magenta</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable4" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Numérisation</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Résolution de la numérisation</td>
+						<td id="td1" width="80%">1.200 DPI (ppp) x 2.400 DPI (ppp) (horizontal x vertical)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Formats de sortie</td>
+						<td id="td2" width="80%">BMP, JPEG, TIFF, PDF, Numérisation vers PDF permettant des recherches</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Type de scanner</td>
+						<td id="td1" width="80%">Détection d’image par contact (CIS)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable5" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Fax</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Type de fax</td>
+						<td id="td1" width="80%">Fonction fax à grande vitesse en noir et blanc et en couleur</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Vitesse de transmission des fax</td>
+						<td id="td2" width="80%">Jusqu'à 33,6 kbps/environ 3 s par page</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Mode de correction des erreurs</td>
+						<td id="td1" width="80%">Fax CCITU/ITU groupe 3 avec mode de correction d'erreurs</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Numérotation rapide (max.) pour le fax</td>
+						<td id="td2" width="80%">200 noms et numéros</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Mémorisation de pages</td>
+						<td id="td1" width="80%">Jusqu'à 550 pages/6 Mo (ITU-T, graphique n°1)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Fonctions du télécopieur</td>
+						<td id="td2" width="80%">Favoris, Faxer par le PC, Recomposition automatique du numéro, Numérotation rapide</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable6" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Connectivité</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Connexions</td>
+						<td id="td1" width="80%">Wi-Fi Direct, Réseau local sans fil IEEE 802.11b/g/n, Interface Ethernet (100 Base-TX/10 Base-T), USB Hi-Speed, compatible USB 2.0 Hi-Speed</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Sécurité WLAN</td>
+						<td id="td2" width="80%">WEP 64 Bit, WEP 128 Bit, WPA PSK (TKIP), WPA PSK (AES)</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Services d'impression mobile et via le cloud</td>
+						<td id="td1" width="80%">Epson Connect (iPrint, Email Print, Remote Print Driver, Scan-to-Cloud), Apple AirPrint, Google Cloud Print</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable7" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Gestion du papier</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Formats de papier</td>
+						<td id="td1" width="80%">A3+, A3, A4, A5, A6, B4, B5, C4 (Enveloppe), C6 (Enveloppe), DL (enveloppe), N° 10 (enveloppe), Letter, 9 x 13 cm, 10 x 15 cm, 13 x 18 cm, 16:9, Défini par l’utilisateur, Legal</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Chargeur automatique de documents</td>
+						<td id="td2" width="80%">35 pages</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Poids de papier qui convient</td>
+						<td id="td1" width="80%">64 g/m² - 256 g/m²</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Recto/verso</td>
+						<td id="td2" width="80%">Oui (A4/A3, papier ordinaire)</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Capacité du bac de sortie papier</td>
+						<td id="td1" width="80%">125 Feuilles</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Alimentation papier standard</td>
+						<td id="td2" width="80%">500 Feuilles Standard, 500 Feuilles maximal</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Nombre de bacs papier</td>
+						<td id="td1" width="80%">2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable8" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Autres caractéristiques</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Caractéristiques</td>
+						<td id="td1" width="80%">Ecran tactile, Impression directe en USB</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Ecran LCD</td>
+						<td id="td2" width="80%">Type : Couleur, Écran tactile, Diagonale : 10,9 cm</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Gestion des médias</td>
+						<td id="td1" width="80%">Recto-verso automatique (A4/A3, papier ordinaire), Impression sans marge, Chargement des supports spéciaux par l'arrière, Support de papier épais</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Cartes mémoire</td>
+						<td id="td2" width="80%">SDXC, SDHC, SD, MiniSDHC*, MiniSD*, MicroSDXC*, MicroSDHC*, MicroSD*, Memory Stick PRO-HG Duo*, Memory Stick PRO Duo*, Memory Stick Micro M2*, MagicGate Memory Stick Duo* (* Adaptor required, not supplied in box)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
