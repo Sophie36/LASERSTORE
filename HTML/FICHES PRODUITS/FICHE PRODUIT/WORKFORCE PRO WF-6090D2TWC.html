@@ -1,0 +1,466 @@
+<meta charset="utf-8" />
+        
+        <style>
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:100px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caractéristiques</h2><br>
+<ul id="ulproduit">
+    <li id="liproduit">Fonctionnalités professionnelles</li><br>
+    <li id="liproduit">Faible consommation en énergie</li><br>
+    <li id="liproduit">Economie d'argent</li>
+</ul><br><br><br><br><br>     
+<h2 id="h2produit"> Présentation </h2>
+
+<p>Elle améliore la productivité et réduit les interventions lors d’usages intensifs au bureau. Avec des fonctionnalités avancées d’impression couleur Recto-Verso, le modèle WF-6090D2TWC offre un temps de sortie de la première page couleur de sept secondes seulement,sans nécessiter de préchauffage. Cette nouvelle imprimante jet d’encre est idéale pour les entreprises qui doivent imprimer des documents couleur : elle permet d’économiser du temps, de l’argent et de l’énergie.<br><br></p>
+
+<h3 id="h3produit">Respect de l'environnement </h3><p>Parce qu’il utilise jusqu’à 80 % d’énergie en moins par rapport aux imprimantes laser concurrentes, le WF-6090D2TWC réduit votre impact sur l’environnement. Sa technologie d’impression à froid, respectueuse de l’environnement, n’émet pas de gaz d’ozone et demeure silencieuse lors de l’impression.</p><br>
+
+<h3 id="h3produit">Faîble coût d'exploitation</h3><p>Avec un coût par page jusqu’à 50 % inférieur et un coût total de possession plus faible par rapport aux imprimantes laser concurrentes, le WF-6090D2TWC permettra aux entreprises de faire des économies. Grâce à son impression couleur Recto Verso, elle économise aussi du papier.</p><br>
+
+<h3 id="h3produit">Interventions réduites et haute fiabilité</h3><p>Les cartouches d’encre très haute capacité Epson XXL utilisées dans la WF-6090D2TWC permettent d’imprimer jusqu’à 10 000 pages en monochrome et 7 000 pages en couleur, ce qui équivaut ou dépasse les résultats des imprimantes laser couleur équivalentes. La capacité papier allant jusqu’à 1 581 pages fait gagner du temps en réduisant les manipulations par les utilisateurs.</p><br>
+
+<h3 id="h3produit">Impression rapide</h3><p>Avec un temps de sortie de la première page couleur de sept secondes seulement, le WF-6090D2TWC est idéale pour imprimer rapidement de petits volumes.</p><br>
+
+<h3 id="h3produit">Contrôle intelligent</h3><p>Imprimez sans fil sur la WF-6090D2TWC avec le couplage NFC à partir des appareils Android, ou envoyez des documents par e-mail à partir de sites distants pour une impression instantanée sur la WF-6090D2TWC. Epson Device Admin permet de gérer facilement et à distance un parc d’appareils.</p><br>
+                            
+<h2 id="h2produit"> Caractéristiques techniques </h2><br>
+<div id="tabs-table" >
+    <div id="tabs" >
+        <div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)">
+            <span> Informations générales </span>
+        </div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)" id="choix7">
+            <span> Technologie </span>
+        </div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)">
+            <span> Impression </span>
+        </div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)">
+            <span>Connectivité</span>
+        </div><br>
+        <div id="choix5" onclick="toggle_div('contentTable5'); newid(this)">
+            <span> Gestion du papier </span>
+        </div>
+        <div id="choix6" onclick="toggle_div('contentTable6'); newid(this)">
+            <span> Autres </span>
+        </div>
+    </div>
+    <div id="table" >
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%"> Informations générales </th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%"> Consommation d'énergie </td>
+                    <td id="td1" width="80%">8,1 W Prêt, 0,4 W (éteindre), 37 W (copie autonome, norme ISO/IEC 24712), 2,1 W (mode veille), TEC 0,5 kWh/semaine</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Gamme de tension/ Fréquence nominale</td>
+                    <td id="td2" width="80%">AC 220 V</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions du produit</td>
+                    <td id="td1" width="80%">478‎ x 522 x 1.060 mm (Largeur x Profondeur x Hauteur)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Systèmes d’exploitation compatibles</td>
+                    <td id="td2" width="80%">Linux, Mac OS 10.6+, Mac OS 10.7.x, Mac OS 10.8.x, Microsoft Windows XP (Édition familiale / Professionnel / Professionnel Édition X64 / Vista), Windows Server 2003 (32/64 bits), Windows Server 2008 (32/64 bits), Windows Server 2008 R2, Windows Server 2012 (64bit)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Puissance acoustique</td>
+                    <td id="td1" width="80%">Fonctionnement : 6,5 B (A)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Pression acoustique</td>
+                    <td id="td2" width="80%">Fonctionnement : 49 dB(A)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Services d'impression mobile et via le cloud</td>
+                    <td id="td1" width="80%">Epson Connect (iPrint, Email Print, Remote Print Driver), Apple AirPrint, Google Cloud Print</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Alimentation électrique</td>
+                    <td id="td2" width="80%">220 V</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Contenu de la Boîte</td>
+                    <td id="td1" width="80%">Cartouches d'encre séparées, Appareil principal, Câble électrique, Guide de mise en route rapide, Mode d’emploi (CD), Documents de garantie</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Technologie</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Mode d'impression</td>
+                    <td id="td1" width="80%"> Tête d’impression PrecisionCore™</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Configuration des buses</td>
+                    <td id="td2" width="80%">800 buses noir, 800 Buses par couleur</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Taille de goutte minimale</td>
+                    <td id="td1" width="80%">3,7 pl, Avec la technologie à taille de point variable</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Technologie de l’encre</td>
+                    <td id="td2" width="80%">DURABrite™ Pro</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Catégorie</td>
+                    <td id="td1" width="80%">Groupe de travail, Groupe de travail, Groupe de travail moyen, Groupe de travail moyen, Service</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Multifonction</td>
+                    <td id="td2" width="80%">Impression</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable3"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie de première page</td>
+                    <td id="td1" width="80%"> Monochrome 7 Secondes, Couleur 7 Secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d’impression ISO/IEC 24734</td>
+                    <td id="td2" width="80%">24 pages/min Monochrome, 24 pages/min Couleur</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse d'impression recto verso ISO/IEC 24734</td>
+                    <td id="td1" width="80%">16 pages A4/min. Monochrome, 16 pages A4/min. Couleur</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d’impression</td>
+                    <td id="td2" width="80%">34 pages/min Monochrome (papier ordinaire), 34 pages/min Couleur (papier ordinaire)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution de l’impression</td>
+                    <td id="td1" width="80%">4.800 x 1.200 DPI (ppp)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Cycle d'utilisation maximal</td>
+                    <td id="td2" width="80%">65.000 pages par mois</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Couleurs</td>
+                    <td id="td1" width="80%">Noir, Cyan, Jaune, Magenta</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable4"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Connectivité</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Connexions</td>
+                    <td id="td1" width="80%">USB Hi-Speed, compatible USB 2.0 Hi-Speed, Interface Ethernet (1000 Base-T/ 100-Base TX/ 10-Base-T), Réseau local sans fil IEEE 802.11b/g/n, Wi-Fi Direct, Near Field Communication (NFC), Interface Ethernet Gigabit, Interface Ethernet (100 Base-TX/10 Base-T)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sécurité WLAN</td>
+                    <td id="td2" width="80%">WEP 64 Bit, WEP 128 Bit, WPA PSK (AES), WPA2 Enterprise</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable5"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion du papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Formats de papier</td>
+                    <td id="td1" width="80%">A4, A5, A6, B5, C4 (Enveloppe), C6 (Enveloppe), N° 10 (enveloppe), Letter, 10 x 15 cm, 13 x 18 cm, 20 x 25 cm, 16:9, Legal</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids de papier qui convient</td>
+                    <td id="td2" width="80%">64 g/m² - 256 g/m²</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Recto/verso</td>
+                    <td id="td1" width="80%">Oui</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité du bac de sortie papier</td>
+                    <td id="td2" width="80%">250 Feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">1.581 Feuilles Standard, 1.581 Feuilles maximal</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Chemin papier arrière (médias spéciaux)</td>
+                    <td id="td2" width="80%">Oui</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Nombre de bacs papier</td>
+                    <td id="td1" width="80%">3</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable6"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Autres caractéristiques</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Ecran LCD</td>
+                    <td id="td1" width="80%">Type : Monochrome, Diagonale : 5,6 cm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Gestion des médias</td>
+                    <td id="td2" width="80%">Recto verso automatique, Chargement des supports spéciaux par l'arrière, Support de papier épais</td>
+                </tr>
+            </table>
+        </div>              
+    </div>
+</div>

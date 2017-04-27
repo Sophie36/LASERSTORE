@@ -1,0 +1,400 @@
+<meta charset="utf-8" />
+        
+        <style>
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>
+    <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+
+<h2 id="h2produit">Caractéristiques</h2><br>
+<ul id="ulproduit">
+    <li id="liproduit">Fonctionnalités et avantages complets de la multifonction</li><br>
+    <li id="liproduit">Fonctionnement aisé</li><br>
+    <li id="liproduit">Frais d'exploitation abordables</li>
+</ul><br><br><br><br>
+<h2 id="h2produit"> Présentation </h2>
+<h3 id="h3produit">Il est désormais facile de respecter l’environnement</h3>
+<p>Rendez vos objectifs environnementaux plus faciles à atteindre grâce au nouveau mode éco de Samsung qui comprend un simulateur de résultats servant à vérifier vos performances. Le mode éco est activé par simple pression sur la touche correspondante et agit comme mode par défaut une fois activé. Il vous permet de réduire votre consommation de papier grâce à l'impression recto verso, à l'impression recto double et au paramètre d'économie de toner. En outre, le simulateur de résultats vous permet d'évaluer précisément vos progrès. La simulation vous montre votre niveau d’émissions de dioxyde de carbone, ainsi que votre consommation d’électricité et de papier. Le mode éco est une manière facile et pratique de surveiller la consommation de votre imprimante. Un avantage pour vous et pour la planète !</p><br>
+<h3 id="h3produit">Faites-en plus sur chaque page avec l'impression recto verso</h3>
+<p>L'impression recto verso est une fonctionnalité essentielle pour accentuer la rapidité et la rentabilité du flux d'impression de votre entreprise. La gamme d'options polyvalente de l'imprimante SCX-5637FR vous permet d'imprimer dans un format classique recto verso, ou de façons plus créatives encore, comme le format recto verso sous forme de livret. Vous gagnez du temps tout en réduisant vos coûts et votre consommation de papier. Vos opérations d'impression sont plus économiques et vous contribuerez à réduire leur impact sur l'environnement. En outre, notre interface utilisateur intuitive simplifie la sélection des différentes options d'impression recto verso. </p><br>
+<h3 id="h3produit">Obtenez le support professionnel dont vous avez besoin avec une imprimante multifonction.</h3>
+<p>Cette imprimante multifonction ultra polyvalente dotée de capacités de télécopie, de numérisation, de photocopie et d’impression simplifiera non seulement votre flux de production et vous fera atteindre de nouveaux niveaux de productivité. La technologie d’impression parallèle Dual Core 600 MHz (1,5x plus rapide qu’avec un cœur unique) et une mémoire extensible s’intègrent parfaitement et dynamisent considérablement les performances. Les tâches d’impression volumineuses ne vous poseront plus aucun problème car elles seront traitées rapidement, facilement et avec précision. En outre, grâce à la prise en charge de nombreux supports, vous obtiendrez une gestion du papier fiable et efficace. Grâce à autant de fonctionnalités indispensables dans une seule imprimante, il vous sera très difficile d’expliquer pourquoi vous n’avez pas encore investi dans un équipement de bureau aussi multifonctionnel.</p><br>
+<h3 id="h3produit">Profitez du raccourci ultime avec la fonction Document Box</h3>
+<p>La mémoire flash intégrée de 2 Go de l'imprimante Samsung SCX-5637FR inclut la nouvelle Document Box, pour un contrôle total de tous vos documents. Les utilisateurs peuvent stocker, partager et imprimer en toute simplicité des documents et des images à partir de serveurs de travail, d'e-mails, de télécopieurs, voire même de scanners. L'interface utilisateur de l'imprimante améliore la simplicité et le confort d'utilisation puisqu'elle est capable de se connecter au Web afin d'accéder à des informations d'assistance en ligne supplémentaires. Même si vous faites face à la difficulté, vous restez organisé et productif, quoi qu'il arrive.</p><br>
+<h3 id="h3produit">Une gestion améliorée des supports pour répondre à toutes les demandes</h3>
+<p>Des documents de tous les jours aux présentations importantes, vos imprimés doivent toujours être à la hauteur. Si vous voulez impressionner avec des résultats de qualité élevée et avec une gestion professionnelle des tâches, vous avez besoin d’une imprimante prenant en charge de nombreux supports. En combinant le bac principal (163 g/m²), le bac en option (1630 g/m²) et le bac MP (220 g/m²), vous pourrez gérer les travaux d'impression les plus volumineux. Des papiers spéciaux aux cartons épais en passant par les enveloppes et les cartes, vous allez imprimer en toute facilité et de manière rentable.</p><br>
+<h3 id="h3produit">Gardez le contrôle sur vos documents avec l’impression sécurisée</h3>
+<p>Des documents importants peuvent facilement se retrouver en de mauvaises mains, en particulier lorsque les imprimantes sont utilisées par plusieurs personnes. La fonction d’impression sécurisée vous permet de conserver vos documents à l’abri des regards indiscrets grâce à l’utilisation d’un code pin dont seule la saisie libère l’impression de vos fichiers. En effet, une fois que vous avez envoyé la tâche d’impression, il vous suffit d'aller à l’imprimante, de trouver votre fichier sur l’interface utilisateur et d’autoriser l’impression en entrant le code pin. Vous disposez ainsi d’un moyen simple et efficace de garder le contrôle total sur les documents importants tout en évitant des impressions inutiles.</p><br>
+<h3 id="h3produit">Limitez les files d’attente et augmentez votre productivité</h3>
+<p>Augmentez la productivité de votre entreprise grâce à un périphérique d'impression rapide qui tire parti d'options de connectivité supérieures. Avec des capacités réseau avancées, les utilisateurs peuvent compter sur cette imprimante pour traiter des travaux complexes depuis plusieurs appareils, en se passant des tracas onéreux liés aux perturbations du flux de travail. Le processeur très rapide Dual Core garantit des vitesses de traitement supérieures et une qualité professionnelle. Ce périphérique répond à tous vos besoins d'impression quel que soit leur niveau de complexité. Offrez à votre entreprise les avantages associés à un périphérique de gamme supérieure qui offre à tout moment des impressions de qualité et sans effort, même lorsqu'il s'agit de travaux très exigeants.</p><br>
+<h3 id="h3produit">Un travail simplifié grâce à des imprimantes faciles à utiliser</h3>
+<p>Obtenez de superbes résultats d’impression sans effort en une simple pression. Le panneau de commande simple doté d’une nouvelle touche circulaire et d’un écran LCD à 2 lignes vous permet de prendre facilement le contrôle de votre imprimante. Avec la nouvelle touche éco pratique, située sur le panneau avant et qui agit comme un réglage par défaut une fois activée, vous pouvez intégrer deux pages dans un même document. Vous réduisez ainsi vos frais de papier et de toner tout en minimisant votre impact sur l’environnement. Le panneau de commande simplifie également votre travail puisqu’il y a moins de touches et d'options inutiles afin de produire des résultats absolument spectaculaires et sans souci.</p><br>
+<h3 id="h3produit">Stimulez votre productivité avec un toner qui dure plus longtemps</h3>
+<p>Adaptez vos travaux professionnels à vos besoins et profitez de solutions professionnelles à la fois performantes et économiques. Les cartouches à très haut rendement vous permettent d’imprimer jusqu’à 10 000 pages. Il devient ainsi aisé de gérer de grandes quantités de documents et de publications. Le niveau de rendement est adaptable grâce à trois options : des cartouches de toner standard (2000 pages standard en moyenne), des cartouches de toner à haut rendement (5000 pages standard en moyenne) et des cartouches de toner à très haut rendement (10 000 pages standard en moyenne). Il devient facile de diminuer ses frais généraux en limitant ainsi le coût par page et en remplaçant moins souvent les cartouches de toner.</p><br>
+<h3 id="h3produit">Reposez-vous sur une imprimante sur laquelle vous pouvez compter</h3>
+<p>Libérez-vous des blocages stressants et gagnez du temps grâce à la technologie anti-bourrages papier de Samsung. Un rouleau semi-retard crée une friction arrière unique lors de la saisie du papier et vous permet de gagner en productivité et de limiter les frustrations. Des problèmes courants qui augmentent le niveau de stress, comme des soucis d’alimentation et des bourrages dans le bac, appartiennent désormais au passé. Un rendement mensuel impressionnant est l’un des avantages visibles et mesurables de la technologie anti-bourrages papier – et l’une des clés d’un traitement plus fluide et fiable. Grâce à la technologie anti-bourrages papier de Samsung, vos travaux d’impression deviennent enfin efficaces, fiables et sans souci.</p><br>
+<h2 id="h2produit"> Caractéristiques techniques </h2><br>
+<div id="tabs-table" >
+    <div id="tabs" >
+        <div onclick="toggle_div('contentTable1'); newid(this)" id="ongletselect">
+            <span> Impression </span>
+        </div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)">
+            <span> Copie </span>
+        </div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)">
+            <span> Numérisation </span>
+        </div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)">
+            <span> Télécopie </span>
+        </div>
+        <div id="choix5" onclick="toggle_div('contentTable5'); newid(this)">
+            <span> Option </span>
+        </div>
+    </div>
+    <div id="table" >
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%"> Impression </th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%"> Résolution </td>
+                    <td id="td1" width="80%">Résolution effective jusqu'à 1200 x 1200 ppp</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulation</td>
+                    <td id="td2" width="80%">PCL5e / 6, PS3, XPS,Epson / IBM Pro, PDF, TIFF</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Copie</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">Résolution effective jusqu'à 1200 x 1200 ppp</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Copie multiple</td>
+                    <td id="td2" width="80%">1 à 99 pages</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Copie recto verso</td>
+                    <td id="td1" width="80%">Standard (1:1, 1:2, 2:1, 2:2) CADRV</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Copy Features (Fonctions copie)</td>
+                    <td id="td2" width="80%">Copie de pièces d'identité, 2 pages/feuille, 4 pages/feuille, poster, clone, assemblage, ajustement automatique</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable3"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Numérisation</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité</td>
+                    <td id="td1" width="80%">Normes TWAIN / WIA</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Procédure</td>
+                    <td id="td2" width="80%">CIS couleur</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution (optique)</td>
+                    <td id="td1" width="80%">1200 x 1200 ppp</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution extrapolée</td>
+                    <td id="td2" width="80%">Jusqu'à 4800 x 4800 ppp</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable4"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Télécopie</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité</td>
+                    <td id="td1" width="80%">ITU-T G3</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse du modem</td>
+                    <td id="td2" width="80%">33.6 Kbits/s</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">Standard: 203 x 98 ppp Fin / Photo: 203 x 196 ppp Super fin: 300 x 300 ppp Couleur: jusqu'à 200 x 200 ppp</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">50 Mo (4000 pages max.)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Numérotation automatique</td>
+                    <td id="td1" width="80%">Numérotation abrégée: 200 emplacements</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Fonction télécopie</td>
+                    <td id="td2" width="80%">On hook Dial (Prise de ligne), rappel automatique, recomposition du dernier numéro composé, réduction automatique, envoi multiple, envoi différé, transfert de télécopies (e-mail / télécopieur), diffusion jusqu'à 209 emplacements</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable5"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Option</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Option</td>
+                    <td id="td1" width="80%">Bac de 520 feuilles / Mémoire (512 Mo) / Connecteur parallèle IEEE 1284B</td>
+                </tr>
+            </table>
+        </div>              
+    </div>
+</div>

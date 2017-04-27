@@ -1,0 +1,468 @@
+<meta charset="utf-8" />
+        
+        <style>
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>
+    <script type="text/javascript">
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+
+<h2 id="h2produit">Caractéristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Impression mobile</li><br>
+    <li id="liproduit">Cartouches d’encre séparées</li><br>
+    <li id="liproduit">Écran LCD de 6,8 cm</li>
+</ul><br>
+<h2 id="h2produit"> Présentation </h2>
+<p> Si vous êtes à la recherche d’une imprimante pour la maison qui soit à la fois économique et qui offre des résultats de haute qualité, notre modèle XP-445 ultra-compact est parfait. Avec ce multifonction, réalisez des économies de façon intelligente, puisque seule la couleur épuisée doit être remplacée. Par ailleurs, avec Epson Connect, bénéficiez d’un large choix en matière d’options d’impression mobile. Inutile d’avoir un ordinateur pour imprimer vos photos : il vous suffit d’insérer une carte mémoire dans l’emplacement prévu à cet effet.<br><br></p>
+
+<h3> Efficace et économique </h3><p>Gérez votre argent de façon intelligente et optez pour une imprimante qui vous offrira toujours un excellent rapport qualité-prix. Le modèle XP-445 utilise des cartouches d’encre séparées de telle sorte que vous ne remplacez que la couleur épuisée, ce qui vous permet de réduire vos coûts. Fini les compromis : ce multifonction est conçu pour produire des textes nets et précis et des photos brillantes de qualité labo.</p><br>
+<h3>Impression mobile</h3><p>Pour les utilisateurs de smartphones ou de tablettes, l’application iPrint est téléchargeable sur un large éventail d’appareils afin de permettre une impression et une numérisation complètement sans fil. Et ce n’est pas fini : avec Epson Email Print, il est possible d’imprimer depuis quasiment n’importe où dans le monde grâce à l’envoi direct des documents et des photos par e-mail à l’imprimante. Pour les plus créatifs, l’application Creative Print permet d’imprimer des photos directement depuis Facebook, de créer des cartes de vœux, des articles de papeterie et même de transformer des photos en modèles d’album de coloriage. Enfin, pour encore plus de polyvalence, la fonction Wi-Fi Direct™ permet d’imprimer facilement depuis un appareil mobile compatible, sans avoir besoin de se connecter à un réseau.</p><br>
+
+<h3>Impression sans PC</h3><p>Il suffit d’insérer une carte mémoire pour que des invites de menu très utiles apparaissent sur le grand écran couleur LCD de 6,8 cm et guident l’utilisateur dans l’impression de ses photos, sans avoir besoin d’un PC.</p><br>
+<h3>Grande compacité</h3><p>Le design élégant, compact et léger du modèle XP-445 permet de gagner une place précieuse sur un bureau.</p><br>                           
+
+<h2 id="h2produit"> Caractéristiques techniques </h2><br>
+<div id="tabs-table" >
+    <div id="tabs" >
+        <div onclick="toggle_div('contentTable1'); newid(this)" id="ongletselect">
+            <span> Informations générales </span>
+        </div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)">
+            <span> Technologie </span>
+        </div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)">
+            <span> Impression </span>
+        </div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)">
+            <span> Numérisation</span>
+        </div><br>
+        <div id="choix8" onclick="toggle_div('contentTable8'); newid(this)">
+            <span> Gestion du papier </span>
+        </div> 
+        <div id="choix9" onclick="toggle_div('contentTable9'); newid(this)">
+            <span> Autres </span>
+        </div> 
+    </div>
+    <div id="table" >
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%"> Informations générales </th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%"> Consommation d'énergie </td>
+                    <td id="td1" width="80%">13 W (copie autonome, norme ISO/IEC 24712), 1,6 W (mode veille),  Certifiée ENERGY STAR®</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Gamme de tension/ Fréquence nominale</td>
+                    <td id="td2" width="80%">AC 220 V - 240 V</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions du produit</td>
+                    <td id="td1" width="80%">390‎ x 300 x 146 mm (Largeur x Profondeur x Hauteur)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids du produit</td>
+                    <td id="td2" width="80%">4,3 kg</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Systèmes d’exploitation compatibles</td>
+                    <td id="td1" width="80%">Mac OS X 10.6.8 or later, Windows 10, Windows 7, Windows 8, Windows 8.1, Windows Vista, Windows XP, XP Professionnel Édition x64</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Niveau sonore</td>
+                    <td id="td2" width="80%">5 B (A) avec Papier Photo Epson Premium Glacé / mode photo RPM - 37 dB(A) avec Papier Photo Epson Premium Glacé / mode photo RPM</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Logiciels inclus</td>
+                    <td id="td1" width="80%">Epson Easy Photo Print</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Services d'impression mobile et via le cloud</td>
+                    <td id="td2" width="80%">Epson Connect (iPrint, Email Print, Remote Print Driver, Scan-to-Cloud), Apple AirPrint, Google Cloud Print</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Couleur</td>
+                    <td id="td1" width="80%">Blanc</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Contenu de la Boîte</td>
+                    <td id="td2" width="80%">Cartouches d'encre séparées, Appareil principal, Câble électrique, Instructions de montage, Logiciel (CD), Document de garantie</td>
+                </tr><tr id="tr1">
+                    <td id="td1" width="30%">Connexions</td>
+                    <td id="td1" width="80%">Wi-Fi, USB, Wi-Fi Direct</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sécurité WLAN</td>
+                    <td id="td2" width="80%">WEP 64 Bit, WEP 128 Bit, WPA PSK (TKIP), WPA PSK (AES)</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Technologie</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Mode d'impression</td>
+                    <td id="td1" width="80%">Tête d'impression Epson Micro Piezo™</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Configuration des buses</td>
+                    <td id="td2" width="80%">180 buses noir, 59 Buses par couleur</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Taille de goutte minimale</td>
+                    <td id="td1" width="80%">3 pl, Avec la technologie à taille de point variable</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Technologie de l’encre</td>
+                    <td id="td2" width="80%">Claria™ Home Ink</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Catégorie</td>
+                    <td id="td1" width="80%">Emplacement individuel</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Multifonction</td>
+                    <td id="td2" width="80%">Impression, Numérisation, Copie</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution de l’impression</td>
+                    <td id="td1" width="80%">5.760 x 1.440 DPI (ppp)</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable3"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse d’impression ISO/IEC 24734</td>
+                    <td id="td1" width="80%">10 pages/min Monochrome, 4,5 pages/min Couleur</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d’impression</td>
+                    <td id="td2" width="80%">15 pages/min Couleur (papier ordinaire), 33 pages/min Monochrome (papier ordinaire), 38 Secondes par photo de 10 x 15 cm (Papier Photo Epson Premium Glacé)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Couleurs</td>
+                    <td id="td1" width="80%">Magenta, Jaune, Cyan, Noir</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable4"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Numérisation</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse de numérisation Recto (A4 en noir)</td>
+                    <td id="td1" width="80%">300 DPI (ppp) 2,4 ms/ligne</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse de numérisation Recto (A4 en couleur)</td>
+                    <td id="td2" width="80%">300 DPI (ppp) 9,5 ms/ligne</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution de la numérisation</td>
+                    <td id="td1" width="80%">1.200 DPI (ppp) x 2.400 DPI (ppp) (horizontal x vertical)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Type de scanner</td>
+                    <td id="td2" width="80%">Détection d’image par contact (CIS)</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable8"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion du papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Formats de papier</td>
+                    <td id="td1" width="80%">A4, A5, A6, B5, C6 (Enveloppe), DL (enveloppe), N° 10 (enveloppe), Letter Legal, 9 x 13 cm, 10 x 15 cm, 13 x 18 cm, 13 x 20 cm, 20 x 25 cm, 100 x 148 mm, 16:9</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Recto/verso</td>
+                    <td id="td2" width="80%"> Manuel</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">100 Feuilles Standard, 20 Feuilles photo</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Nombre de bacs papier</td>
+                    <td id="td2" width="80%">1</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Marge d'impression</td>
+                    <td id="td1" width="80%">0 mm haut, 0 mm droite, 0 mm bas, 0 mm gauche (là où la marge est définie. Sinon : 3 mm en haut, sur les côtés et en bas.)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Gestion des médias</td>
+                    <td id="td2" width="80%">Impression sans marge, Recto verso manuel</td>
+                </tr>
+            </table>
+        </div>
+        <div id="contentTable9"  class="mask_element">
+            <table id="tableauCarac">
+                <tr id="trth">
+                    <th id="th" width="30%">Autres caractéristiques</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Caractéristiques</td>
+                    <td id="td1" width="80%">Suppression des yeux rouges, Amélioration des photos</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Ecran LCD</td>
+                    <td id="td2" width="80%">Type : Couleur, Panneau tactile, Diagonale : 6,8 cm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartes mémoires</td>
+                    <td id="td1" width="80%">SDXC, SDHC, SD, MicroSDXC*, MicroSDHC*, MicroSD*, MiniSDHC*, MiniSD* (* Adaptor required, not supplied in box)</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
