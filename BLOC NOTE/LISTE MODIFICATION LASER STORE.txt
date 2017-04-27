@@ -1,0 +1,62 @@
+LASER STORE
+
+
+
+-------------------------------------- GENERAL -----------------------------------------------------------------------------------
+- La bande "BESOIN DE CONSEILS ?" trop grande.
+- Footer trop grand, s'adapte mal lors de la réduction de la page (centrage des informations).
+
+- Header à revoir:
+	glisser la souris pour avoir un menu déroulant.
+	mettre un logo à la place du nom du site (ce dernier est décalé par rapport aux autres titres).
+	Voir LDLC et/ou Materiel.net.
+	Menu qui s'adapte mal lors de la réduction de la fenêtre. (Site Internet trop responsive (s'adapte trop à la taille de la fenêtre)).
+	Mal adaptation des catégories lors de la réduction de la fenêtre.
+	Pas de bouton recherche ou OK à côté de la barre de recherche.
+
+- Aligner tous les articles.
+
+- Enlever les images avec Espace Pro et Espace Particuliers ou enlever une image lorsqu'on est sur cette dernière. (enlever Espace Particuliers lorsqu'on est sur la page Espace Particuliers par exemple).
+
+- Faute, PROFESSIONELS.
+
+- Mettre toutes les images à la même taille/dimension.
+- Taille de la police et des images trop grande.
+- Image d'articles qui manque.
+
+- Réduire la longueur des barres "input" (dans Contact, Identification)
+
+
+-------------------------------------- CONCERNANT LE TRI/FILTRE ------------------------------------------------------------------
+
+- Sur les pages où il y a plein d'article, faire un tableau comprenant les articles pour les séparer, les dissocier.
+- Faire une seule partie Imprimante puis des sous-parties Imprimante jet d'encre, imprimante laser etc ???
+
+- Mettre en place des filtres pour les articles afin de les trier. Faire des filtres afin de rechercher plus facilement des articles dans Consommables.
+- Sur les pages où il y a plein d'article, faire un tableau comprenant les articles pour les séparer, les dissocier.
+- Faire une seule partie Imprimante puis des sous-parties Imprimante jet d'encre, imprimante laser etc ???
+
+
+
+-------------------------------------- FICHE ARTICLE/PRODUIT ---------------------------------------------------------------------
+
+- Trop grande description des articles (recentrer les infos _ grosse bande blanche sur la gauche).
+- Toujours les mêmes produits stars suivant les catégories "professionnels" et "particuliers".
+- Des caractéristiques techniques a insérer dans les fiches des articles ?
+- Bouton Ajouter au panier à la place de Voir l'article (voir l'article avant de l'ajouter au panier) --> en bas dans les produits liés.
+- Pas de bouton Acheter ou Ajouter au panier sur la page d'info des articles.
+- Il y a des articles qui ont le bouton Ajouter au panier et d'autres qui ont Lire Plus.
+- Peut être trop de produits liés suivant l'article choisi.
+- Barre de quantité qui ne s'adapte pas (100 cartouches par exemple).
+
+
+
+-------------------------------------- PROBLEMES DE REDIRECTION ---------------------------------------------------------------------
+
+- Clique molette sur un article qui se trouve déjà sur une page d'un article nous renvoi vers ce dernier. Il nous renvoi pas sur l'article sur lequel nous avons cliqué.
+- Clique gauche sur une image renvoi une erreur "Image cannot be loaded. Make sure the path is correct and image exist". En cliquant sur certains articles, on est redirigé soit vers une image qui ne s'affiche pas, soit vers la fiche de l'article.
+- Pages 404:
+	http://dev.laser-store.fr/categorie-produit/professionnels/multifonction-monochrome-a/
+
+
+	

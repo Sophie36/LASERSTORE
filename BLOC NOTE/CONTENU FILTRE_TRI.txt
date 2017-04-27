@@ -1,0 +1,35 @@
+FEUILLE PARTICULIER IMPRIMANTE-FILTRE/TRI:
+
+IMPRIMANTE:
+
+Imprimante jet d'encre
+Imprimante laser
+Multifonction jet d'encre
+Multifonction laser
+
+MARQUES:
+
+MARQUE 1
+MARQUE 2
+MARQUE 3
+MARQUE 4
+ETC ...
+
+FEUILLE PRO IMPRIMANTE-FILTRE/TRI:
+
+IMPRIMANTE:
+
+Multifonction monochrome A4
+Imprimante monochrome A4
+Imprimante et copieur A3 monochrome
+Multifonction couleur A4
+Imprimante couleur A4
+Imprimante et copieur A3 couleur
+
+MARQUES:
+
+MARQUE 1
+MARQUE 2
+MARQUE 3
+MARQUE 4
+ETC ...
