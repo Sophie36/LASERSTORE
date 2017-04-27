@@ -1,0 +1,20 @@
+PLAQUETTE 1:
+
+- trop de texte
+- éléments en double sur la plaquette ("Libérez vous, confiez nous votre informatique")& l'adresse de Dieppe
+- logo linux mal placé 
+- adresse mal alignée
+- adresse mail mal placée
+- Il manque une agence sur la carte ?! celle de Castres ?!
+
+PLAQUETTE 2:
+
+- Même problème que la première plaquette
+
+PLAQUETTE 3:
+
+- Adresses pas centrées, peut être mettre les adresses et la carte de France ensemle sur un même côté
+- Images
+- Mauvaise visibilité du texte en haut
+- On ne sait pas à quoi fait référence les images dans les angles en bas à gauche et en bas à droite
+- Adresse mail mal placée
