@@ -1,0 +1,487 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Traitement accéléré</li>
+    <br />
+    <li id="liproduit">Fiabilit&eacute; des performances</li>
+    <br />
+    <li id="liproduit">Travaillez plus rapidement</li>
+    <br />
+    <li id="liproduit">Graphiques haute r&eacute;solution</li>
+</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Le multifonction Lexmark CX310dn pr&ecirc;t &agrave; une utilisation en r&eacute;seau assure l'impression recto verso ainsi que des fonctions d'impression, de copie et de num&eacute;risation &agrave; une vitesse d'impression atteignant 23 ppm. Elle dispose en outre d'un &eacute;cran couleur de 6 cm (2,4 pouces).<br /><br /></p>
+<h3 id="h3produit">La libert&eacute; d'imprimer &agrave; la demande</h3>
+<p>R&eacute;alisez &agrave; la demande des impressions couleur professionnelles en interne. Avec la m&eacute;moire extensible de 512 Mo et le processeur rapide &agrave; double c&oelig;ur, vous conjuguez vitesse, puissance et convivialit&eacute;.</p>
+<br />
+<h3 id="h3produit">Correspondance des couleurs</h3>
+<p>Avec une r&eacute;solution atteignant 1200 x 1200 ppp, les images et les graphiques restent nets. Le toner Unison&trade; de Lexmark assure lui aussi une qualit&eacute; homog&egrave;ne.</p>
+<br />
+<h3 id="h3produit">Graphiques haute r&eacute;solution</h3>
+<p>Avec une capacit&eacute; d'alimentation maximale de 2 000 feuilles et une cartouche de toner ultra longue dur&eacute;e, vous intervenez moins souvent pour ajouter du papier ou remplacer les cartouches.</p>
+<br />
+<h3 id="h3produit">Impression ultra-rapide et silencieuse</h3>
+<p>Imprimez et copiez rapidement jusqu'&agrave; 23 pages par minute en noir et en couleur, et produisez un document couleur d'une page en 12,5 secondes seulement.</p>
+<br />
+<h3 id="h3produit">Fiabilit&eacute; des performances</h3>
+<p>Imprimez facilement jusqu'&agrave; 5 000 pages par mois tout en profitant d'une maintenance plus ais&eacute;e gr&acirc;ce &agrave; une gestion du papier particuli&egrave;rement pointue.</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)">             <span> Informations g&eacute;n&eacute;rales </span>         </div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)">             <span>Copie</span>         </div>
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)">             <span> Impression </span>         </div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)">             <span>Gestion de papier</span>         </div>
+<br />
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)">             <span>Autres </span>         </div>
+</div>
+<div id="table">
+<div id="contentTable1" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%"> Informations g&eacute;n&eacute;rales </th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%"> Marque </td>
+            <td id="td1" width="80%">Lexmark</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Nom du produit</td>
+            <td id="td2" width="80%">Lexmark CX310dn</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Technologie d'impression</td>
+            <td id="td1" width="80%">Laser - couleur</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Type de p&eacute;riph&eacute;rique</td>
+            <td id="td2" width="80%">Imprimante / photocopieur / scanner</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Type de photocopieuse</td>
+            <td id="td1" width="80%">Num&eacute;rique</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Cycle d'utilisation mensuel (maxi)</td>
+            <td id="td2" width="80%">60000 impressions</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Volume mensuel recommand&eacute;</td>
+            <td id="td1" width="80%">500 - 5 000 pages</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Hauteur</td>
+            <td id="td2" width="80%">47 cm</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Poids</td>
+            <td id="td1" width="80%">27,39 kg</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Largeur</td>
+            <td id="td2" width="80%">44,4 cm</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Profondeur</td>
+            <td id="td1" width="80%">55,8 cm</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Syst&egrave;me d'exploitation requis</td>
+            <td id="td2" width="80%">MS Windows XP, Novell NetWare 6, MS Windows Server 2003, MS Windows Server 2008 x64 Edition, Apple Mac OS X 10.5, Red Hat Enterprise Linux WS 4.0, MS Windows 7, Red Hat Enterprise Linux WS 5.0, SuSE Linux Enterprise Server 10, SuSE Linux Enterprise Server 11, SuSE Linux Enterprise Desktop 10, SuSE Linux Enterprise Desktop 11, Debian GNU/Linux 5.0, Red Flag Linux Desktop 6.0, HP-UX 11.11, HP-UX 11.23, HP-UX 11.31, MS Windows 7 Edition 64 bits, MS Windows Vista, MS Windows XP 64-bit Edition, MS Windows Server 2003 x64 Edition, MS Windows Vista (&eacute;ditions 64 bits), MS Windows Server 2008, IBM AIX 5.3, Novell NetWare 5.1, Novell NetWare 6.5, SunSoft Solaris x86 10, IBM AIX 6.1, Apple Mac OS X 10.6, openSUSE 11.3, MS Windows Server 2008 R2, Fedora 14, openSUSE 11.4, Apple Mac OS X 10.7, Red Hat Enterprise Linux WS 6.0, Debian GNU/Linux 6.0, IBM AIX 7.1, Ubuntu Linux 11.04, Fedora 15, Ubuntu Linux 11.10, Ubuntu Linux 12.04, Apple Mac OS X 10.8, PCLinuxOS 2011.9, Linux Mint 9, Linux Mint 10, Linux Mint 11, Linux Mint 12, SunSoft Solaris x86 11, Novell Open Enterprise Server</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable2" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Copie</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Agrandissement maximal de documents</td>
+            <td id="td1" width="80%">400%</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">R&eacute;duction maximale de documents</td>
+            <td id="td2" width="80%">25%</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse de reproduction maximale</td>
+            <td id="td1" width="80%">Jusqu'&agrave; 23 ppm (mono)/jusqu'&agrave; 23 ppm (couleur)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable3" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Impression</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">R&eacute;solution d'impression maximale</td>
+            <td id="td1" width="80%">Jusqu'&agrave; 1200 x 1200 ppp (mono)/jusqu'&agrave; 1200 x 1200 ppp (couleur)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Impression recto-verso automatique</td>
+            <td id="td2" width="80%">Oui</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse d'impression maximale</td>
+            <td id="td1" width="80%">Jusqu'&agrave; 23 ppm (mono)/jusqu'&agrave; 23 ppm (couleur)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Pilotes / &eacute;mulations imprimante</td>
+            <td id="td2" width="80%">PCL 5e, PCL 6, PostScript 3, PCL 5c, PPDS, PDF 1.7, XPS</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Technique d'am&eacute;lioration de l'image</td>
+            <td id="td1" width="80%">4800CQ</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Dur&eacute;e de sortie de la premi&egrave;re impression, Noir et blanc</td>
+            <td id="td2" width="80%">11.5 s</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Dur&eacute;e de sortie de la premi&egrave;re impression, couleur</td>
+            <td id="td1" width="80%">12.5 s</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable4" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Gestion du papier</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Taille d'origine maximum</td>
+            <td id="td1" width="80%">Legal (216 x 356 mm)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Capacit&eacute; du chargeur de documents</td>
+            <td id="td2" width="80%">50 feuilles</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Taille maximum du support</td>
+            <td id="td1" width="80%">Legal</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Type de support pris en charge</td>
+            <td id="td2" width="80%">Transparents, enveloppes, papier ordinaire, carte-copie, &eacute;tiquettes</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Poids minimum du support</td>
+            <td id="td1" width="80%">60 g/m&sup2;</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Poids maximum du support</td>
+            <td id="td2" width="80%">176 g/m&sup2;</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Taille des supports pris en charge</td>
+            <td id="td1" width="80%">ANSI A (Letter) (216 x 279 mm), Legal (216 x 356 mm), Executive (184 x 267 mm), A4 (210 x 297 mm), A5 (148 x 210 mm), Folio (216 x 330 mm), JIS B5 (182 x 257 mm), Oficio (216 x 343 mm)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Capacit&eacute; de support standard</td>
+            <td id="td2" width="80%">250 feuilles</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Capacit&eacute; de support maximum</td>
+            <td id="td1" width="80%">900 feuilles</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Capacit&eacute; du bac de d&eacute;rivation</td>
+            <td id="td2" width="80%">1 feuille</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Capacit&eacute; des bacs de sortie</td>
+            <td id="td1" width="80%">150 feuilles</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">D&eacute;tails concernant la manipulation de documents et de supports</td>
+            <td id="td2" width="80%">ADF - 50 feuilles, Bac de d&eacute;rivation - 1 feuilles, Bac d'entr&eacute;e - 250 feuilles, Bac de sortie - 150 feuilles</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">D&eacute;tails sur la vitesse</td>
+            <td id="td1" width="80%">Impression : jusqu'&agrave; 23 ppm ( A4 ) - noir et blanc, Impression : jusqu'&agrave; 23 ppm ( A4 ) - couleur, Impression : jusqu'&agrave; 12 c&ocirc;t&eacute;s par minute ( A4 ) - noir et blanc recto-verso, Impression : jusqu'&agrave; 12 c&ocirc;t&eacute;s par minute ( A4 ) - couleur - recto-verso, Copie : jusqu'&agrave; 23 ppm ( A4 ) - noir et blanc, Copie : jusqu'&agrave; 23 ppm ( A4 ) - couleur, Num&eacute;risation : jusqu'&agrave; 30 ppm ( A4 ) - noir et blanc, Num&eacute;risation : jusqu'&agrave; 30 ppm ( A4 ) - couleur</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable5" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Autres</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Niveau sonore</td>
+            <td id="td1" width="80%">16 dBA (inactif) / 50 dBA (en fonctionnement)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Temp&eacute;rature de fonctionnement mini</td>
+            <td id="td2" width="80%">16 &deg;C</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Temp&eacute;rature de fonctionnement maxi</td>
+            <td id="td1" width="80%">32 &deg;C</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Taux d'humidit&eacute; en fonctionnement</td>
+            <td id="td2" width="80%">8 - 80%</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
