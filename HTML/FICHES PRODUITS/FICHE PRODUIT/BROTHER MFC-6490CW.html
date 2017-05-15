@@ -1,0 +1,513 @@
+<meta charset="utf-8" />
+        
+    <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+		
+		 #tabs-table{
+            height:460px;
+        }
+		
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style><script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+
+<h2 id="h2produit">Caractéristiques</h2>
+		<ul id="ulproduit">
+			<li id="liproduit">Multifonctions Jet d'encre Couleur</li><br>
+		</ul>
+		<br><br><br><br>
+<h2 id="h2produit"> Présentation </h2>
+<p>Le multifonction professionnelle jet d’encre couleur A3 et A4 sans fil Wi-Fi avec fax Brother 
+vous donne la possibilité de voir encore plus grand tout en conservant une haute qualité d’impression 
+grâce à la nouvelle imprimante multifonction jet d’encre MFC-6490CW.</h3>
+<p>Vous imprimez, copiez, faxez et numérisez jusqu’au format A3.</p>
+<p>La nouvelle génération d’imprimante multifonction jet d’encre de Brother, vous permet de conjuguer 
+  polyvalence et performance. Le MFC-6490CW offre de nombreuses caractéristiques accessibles par plusieurs
+  utilisateurs grâce à sa connectivité réseau sans fil Wi-Fi.</p>
+<p>Son large écran LCD couleur de 8,4 cm vous permet d’accéder intuitivement aux nombreuses fonctions 
+disponibles telles que la prévisualisation des messages fax, l’affichage de vos photos aussi bien 
+individuellement qu’en diaporama, ou encore d’imprimer ces dernières sans utiliser votre ordinateur.</p>
+<p>Il n’est pas nécessaire de charger et recharger différents types de papiers car le MFC-6490CW possède 
+deux bacs papier d’une contenance de 400 feuilles.</p>
+<p>De plus, son chargeur automatique de documents de 50 feuilles vous permet de copier et de faxer les documents 
+de plusieurs pages simplement et rapidement.</p>
+<p>Le MFC-6490CW est doté également de cartouches haute capacité séparées conforme à la norme environnementale 
+allemande Blue Angel.</p>
+<p>Toutes ces caractéristiques rendent le MFC-6490CW de Brother plus compétitif et marquent une réelle 
+différence pour votre entreprise.</p>
+<p>Avec Brother, Laissez la plus belle empreinte possible.</p>
+<p>Vitesse d\'impression couleur 28 ppm Vitesse d\'impression N & B 35 ppm Résolution d\'impression 1200 x 6000 
+dpi Tiroir papier photo 20 feuilles Bac papier supérieur 150 feuilles Bac papier inférieur 250 feuilles 
+Réceptacle 50 pages Impression sans marge tous formats Modem 33,6kbps Chargeur de documents 50 feuilles 
+Copieur autonome Résolution de copie jusqu\'à 1200 x 1200 dpi.</p>
+<p>Agrandissement / Réduction de 25 à 400% Scan vers e-mail, image, OCR ou fichier Résolution optique 
+  jusqu\'à 2400 x 1200 dpi.</p>
+<br />
+<h2 id="h2produit"> Caractéristiques techniques </h2>
+<br />
+<div id="tabs-table">
+			<div id="tabs">
+				<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Informations générales</span></div>
+				<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Impression</span></div>
+				<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Copie</span></div>
+				<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Scanner</span></div>
+				<br />
+				<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Fax</span></div>
+				<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Gestion de papier</span></div>
+				<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Consommables</span></div>
+				<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Autres</span></div>
+			</div>
+		<div id="table">
+			<div id="contentTable1" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Informations générales</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Dimensions (LxPxH)</td>
+							<td id="td1" width="80%">540x488x323 mm</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Interface 	Standard </td>
+							<td id="td2" width="80%">USB 2.0 FS</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Taille min. de gouttelettes</td>
+							<td id="td1" width="80%">1,5 picolitre avec papier Brother BP61</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Temps de chauffe</td>
+							<td id="td2" width="80%">Moins de 0 secondes</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Chargeur de documents</td>
+							<td id="td1" width="80%">Jusqu'à 50 feuilles</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Réduction automatique</td>
+							<td id="td2" width="80%">Ajustement automatique au format A4 des fax réceptionnés</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Groupes de diffusion</td>
+							<td id="td1" width="80%">Jusqu'à 6 groupes</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Multidiffusion</td>
+							<td id="td2" width="80%">Envoi du même message jusqu'à 256 destinataires</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Mémoire envoi/réception </td>
+							<td id="td1" width="80%">Jusqu'à 400 pages</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Mémoire Standard</td>
+							<td id="td2" width="80%">64 Mo</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Réduction / Agrandissement</td>
+							<td id="td1" width="80%">De 25 à 400% par tranche de 1%</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable2" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Impression</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Vitesse d'impression</td>
+							<td id="td1" width="80%">N & B : 35 </br>Couleur : 28</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Bac multi-formats</td>
+							<td id="td2" width="80%">Jusqu'à 20 feuilles</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution d'impression</td>
+							<td id="td1" width="80%">Jusqu'à 1200 X 6000 (horizontal X vertical) dpi</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Impression sans marge</td>
+							<td id="td2" width="80%">Disponible pour A3, A4, Letter, A6, photo 10X15, carte index, carte postale</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable3" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Copie</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Vitesse de copie</td>
+							<td id="td1" width="80%">N & B : Jusqu'à 23 cpm </br>Couleur : Jusqu'à 20 cpm </td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Copieur autonome</td>
+							<td id="td2" width="80%">Oui</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution </td>
+							<td id="td1" width="80%">Jusqu'à 1200 x 1200 dpi</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable4" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Scanner</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Scan vers</td>
+							<td id="td1" width="80%">e-mail, image, OCR ou fichier</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Résolution Optique </td>
+							<td id="td2" width="80%">Jusqu'à 2400 x 1200 dpi (depuis la vitre) dpi</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution Interpolée</td>
+							<td id="td1" width="80%">Jusqu'à 19200 x 19200dpi dpi</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable5" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Fax</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">PC Fax</td>
+							<td id="td1" width="80%">Envoi et réception de fax à partir de l'ordinateur 
+							(ligne téléphonique nécessaire)</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Niveaux de gris</td>
+							<td id="td2" width="80%">256</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Mode de correction d'erreur (ECM)</td>
+							<td id="td1" width="80%">Lorsque les appareils partagent la même fonction ECM, les erreurs</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Renvoi de fax</td>
+							<td id="td2" width="80%">Envoi un document reçu à un autre destinataire pré-programmé (N&B uniquement)</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable6" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Gestion papier</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Capacité papier</td>
+							<td id="td1" width="80%">Standard : Jusqu'à 150 feuilles
+												</br>Optionnel/Inférieur : Jusqu'à 250 feuilles
+												</br>Réceptacle : Jusqu'à 50 feuilles</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Photocapture Centre</td>
+							<td id="td2" width="80%">Imprime des images directement depuis Smart Media, Compact Flash, Memory Stick, 
+												Memory Stick Pro, Secure Digital, xD Picture card...</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable7" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Consommables</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Consommables</td>
+							<td id="td1" width="80%">LC-1100 ; LC-1100HY(haute capacité)</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Consommation</td>
+							<td id="td2" width="80%">Pointe moins de 26 Watts</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable8" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Autres</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Lecteur de clé USB</td>
+							<td id="td1" width="80%">Oui</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Port Pictbridge</td>
+							<td id="td2" width="80%">Oui</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Repos</td>
+							<td id="td1" width="80%">Moins de 6 Watts</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Veille</td>
+							<td id="td2" width="80%">Moins de 4 Watts</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Affichage à cristaux liquides (LCD)</td>
+							<td id="td1" width="80%">Ecran couleur de 8,4 cm</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Garantie</td>
+							<td id="td2" width="80%">1 an échange sur site extensible à 3 ans échange sur site</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+		</div>
+	</div>
+
