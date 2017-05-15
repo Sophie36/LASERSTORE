@@ -1,0 +1,462 @@
+<meta charset="utf-8" />
+        
+    <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+		
+		 #tabs-table{
+            height:460px;
+        }
+		
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style><script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+
+<h2 id="h2produit">Caractéristiques</h2>
+		<ul id="ulproduit">
+			<li id="liproduit">Multifonction monochrome</li><br>
+		</ul><br><br><br><br>
+<h2 id="h2produit"> Caractéristiques techniques </h2>
+<div id="tabs-table">
+			<div id="tabs">
+				<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Informations générales</span></div>
+				<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Impression</span></div>
+				<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Copie</span></div>
+				<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Scanner</span></div>
+				<br />
+				<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Fax</span></div>
+				<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Gestion de papier</span></div>
+				<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Consommables</span></div>
+				<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Options</span></div>
+			</div>
+		<div id="table">
+			<div id="contentTable1" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Informations générales</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Compatibilité Mac</td>
+							<td id="td1" width="80%">Windows 2000, XP (32/64 bits), 2003 Server, Vista (32/64  bits), NetWare 5.x, 6.x, Mac OS 8.6 ~ 9.2, 10.1 ~ 10.4, Various Linux OS  including Red Hat 8~9, Fedora Core 1 ~ 4, Mandrake 9.2 ~ 10.1, and SuSE  8.2 ~ 9.2, Unix AT&amp;T System V (Rel 4.2), BSD4.3, HP-UX (Rel 9.x  &amp; Rel 10.x), SCO 5.x, SUNOS 5.5, Sparc or Solaris 2.5</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Dimensions ( L x P x H)</td>
+							<td id="td2" width="80%">445.2 x 410.5 x 395.3 mm</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Volume mensuel maximum</td>
+							<td id="td1" width="80%">30.000 pages</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Niveau sonore max</td>
+							<td id="td2" width="80%">Impression: moins de 50 dB</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Mémoire applications</td>
+							<td id="td1" width="80%">128 Mo (Max. 384 Mo)</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Poids Net / Brut (kg)</td>
+							<td id="td2" width="80%">17.8</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable2" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Impression</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Vitesse (mono)</td>
+							<td id="td1" width="80%">28 ppm</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Délai d'impression de la première page</td>
+							<td id="td2" width="80%">16 s</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution</td>
+							<td id="td1" width="80%">30.000 pages</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Langage(s) d'impression</td>
+							<td id="td2" width="80%">PCL5e, PCL6, IBM ProPrinter, EPSON, PS3</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Recto Verso</td>
+							<td id="td1" width="80%">Standard</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable3" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Copie</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Vitesse (mono)</td>
+							<td id="td1" width="80%">28 ppm</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Résolution</td>
+							<td id="td2" width="80%">600 x 600 dpi</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Fonctions de copie</td>
+							<td id="td1" width="80%">N-up copy: 2-up / 4-up, Collation Copy: Yes, AutoFit Copy:  Yes (Platen only), 2-side Copy: Yes (Platen only), Clone: Yes (Platen  only), Poster: Yes (Platen only)</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Délai d'impression de la première page</td>
+							<td id="td2" width="80%">15 s</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable4" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Scanner</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Compatibilité</td>
+							<td id="td1" width="80%">Twain Standard, WIA Standard</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Méthode</td>
+							<td id="td2" width="80%">Couleur CIS</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution optique</td>
+							<td id="td1" width="80%">1200 x 1200 dpi </td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Résolution améliorée</td>
+							<td id="td2" width="80%">Max. 4800 x 4800 dpi</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable5" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Fax</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Compatibilité</td>
+							<td id="td1" width="80%">ITU-T Group 3, ECM</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Vitesse du modem</td>
+							<td id="td2" width="80%">33.6 Kbps</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Résolution</td>
+							<td id="td1" width="80%">Max. 300 x 300 dpi Standard: 203 x 98 dpi Fine: 203 x 196 dpi  Super Fin: 300 x 300 dpi Photo: 203 x 196 dpi Couleur: 200 x 200 dpi</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Appel automatique</td>
+							<td id="td2" width="80%">200</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Mémoire applications</td>
+							<td id="td1" width="80%">3.2 MB</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable6" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Gestion papier</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Capacité et type en entrée</td>
+							<td id="td1" width="80%">250 feuilles</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Capacité et type en sortie</td>
+							<td id="td2" width="80%">150 feuilles</td>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Capacité</td>
+							<td id="td1" width="80%">50 feuilles</td>
+						</tr>
+						<tr id="tr2">
+							<td id="td2" width="30%">Format</td>
+							<td id="td2" width="80%">Impression: Legal, A4, Letter, Folio, Executive, JIS B5, A5,  A6, Envelope6 3/4, 7 3/4, #9, #10, DL, C5, C6, ISO B5, Monarch Env 76 x  127 mm ~ 216 x 356 mm, pour Fax et Copie: Letter, A4, Legal </td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable7" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Consommables</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Type</td>
+							<td id="td1" width="80%">Toute en 1</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+			<div id="contentTable8" class="mask_element">
+				<table id="tableauCarac">
+					<tbody>
+						<tr id="trth">
+							<th id="th" width="30%">Options</th>
+						</tr>
+						<tr id="tr1">
+							<td id="td1" width="30%">Option</td>
+							<td id="td1" width="80%">1. Transfer Roller: 50 K pages 2. Fuser Unit: 50 K pages 3. Pick-up Roller: 50 K pages 4. ADF Pad Uni: 20 K pages</td>
+						</tr>
+					</tbody>	
+	            </table>
+	        </div>
+		</div>
+</div>
+
+
+
