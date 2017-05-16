@@ -1,0 +1,497 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+	<h2 id="h2produit">Caractéristiques</h2>
+		<ul id="ulproduit">
+			<li id="liproduit">Multifonctions Jet dencre Couleur</li>
+			<br />
+		</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit">Caractéristiques techniques </h2>
+			<br />
+<div id="tabs-table">
+	<div id="tabs">
+		<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span> Informations générales </span></div>
+		<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Impression</span></div>
+		<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Technologie</span></div>
+		<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Numérisation</span></div>
+		<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Fax</span></div>
+	<br />
+		<div id="choix7" onclick="toggle_div('contentTable6'); newid(this)"><span>Connectivité</span></div>
+		<div id="choix8" onclick="toggle_div('contentTable7'); newid(this)"><span>Gestion de papier</span></div>
+		<div id="choix9" onclick="toggle_div('contentTable8'); newid(this)"><span>Autres</span></div>
+	</div>
+	<div id="table">
+		<div id="contentTable1" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Informations générales</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Consommation d’énergie</td>
+						<td id="td1" width="80%">17 Watt (standalone copying, ISO/IEC 24712 pattern), 2,4 Watt (sleep mode)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Dimensions du produit </td>
+						<td id="td2" width="80%">460‎ x 420 x 341 mm (Width x Depth x Height) </td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Poids du produit</td>
+						<td id="td1" width="80%">13,8 kg</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Puissance sonore</td>
+						<td id="td2" width="80%">4,8 B (A) according to ISO 7779 pattern with Epson Premium 
+						Glossy Photo Paper / Photo RPM mode</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Systèmes d’exploitation compatibles</td>
+						<td id="td1" width="80%">Mac OS 10.5+, Mac OS 10.6+, Windows 7, Windows 7 x64, 
+						Windows Server 2003 (32/64bit), Windows Server 2008 (32/64bit), 
+						Windows Server 2008 R2, Windows Vista, Windows Vista x64, Windows XP, 
+						Windows XP x64 </td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Puissance acoustique</td>
+						<td id="td2" width="80%">Operation: 6,2 B (A)</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Services d\'impression mobile et via le cloud</td>
+						<td id="td1" width="80%">Epson Connect (iPrint, Email Print), Apple AirPrint, Google Cloud Print</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Alimentation électrique</td>
+						<td id="td2" width="80%">110V, 240V </td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Contenu de la Boite</td>
+						<td id="td1" width="80%">Driver and utilities (CD), Individual Ink Cartridges, 
+						Installation/safety manual, Main unit, Power cable, Setup guide, 
+						User manual (CD), Warranty document, Wi-Fi/network setup guide </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable2" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Impression</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Temps d’attente jusqu’à la première page</td>
+						<td id="td1" width="80%">Monochrome 7 Secondes,</br>Couleur 9 Secondes</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Vitesse d’impression ISO/IEC 24734 </td>
+						<td id="td2" width="80%">16 Pages/min Monochrome,</br>11 Pages/min Couleur</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Vitesse d’impression</td>
+						<td id="td1" width="80%">24 Pages/min Coleur (papier normal 75 g/m²),</br>
+												26 Pages/min Monochrome (papier nomal 75 g/m²)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Résolution de l’impression</td>
+						<td id="td2" width="80%">4.800 x 1.200 DPI </td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Cycle d\'utilisation maximal</td>
+						<td id="td1" width="80%">20.000 Pages par mois</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable3" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Technologie</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Mode d\'impression</td>
+						<td id="td1" width="80%">On-demand inkjet</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Configuration des buses</td>
+						<td id="td2" width="80%">152 Busses Noir,</br>152 Busses par couleur </td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Taille de goutte minimale</td>
+						<td id="td1" width="80%">3 pl</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Technologie de l’encre</td>
+						<td id="td2" width="80%">DURABrite™ Ultra </td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Catégorie</td>
+						<td id="td1" width="80%">Petite entreprise</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Multifonction</td>
+						<td id="td2" width="80%">Impression, Scanner, Photocopie</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable4" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Numérisation</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Vitesse de numérisation A4 en noir et blanc</td>
+						<td id="td1" width="80%">1 msec/ligne</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Vitesse de numérisation A4 en couleur </td>
+						<td id="td2" width="80%">4 msec/ligne</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Résolution de la numérisation</td>
+						<td id="td1" width="80%">1.200 DPI x 2.400 DPI (Horizontal x Vertical)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Type de scanner</td>
+						<td id="td2" width="80%">Contact image sensor (CIS)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable5" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Fax</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Fonctions du télécopieur</td>
+						<td id="td1" width="80%">Favorites,</br>PC Fax,</br>Memory Reception,</br>Timer,</br>Auto Redial,</br>Speed Dial </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable6" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Connectivité</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Connexions</td>
+						<td id="td1" width="80%">Hi-Speed USB - compatible with USB 2.0 specification, USB host,</br>Ethernet interface (100 Base-TX / 10 Base-T)</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable7" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Gestion du papier</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Formats de papier</td>
+						<td id="td1" width="80%">A4, A5, A6, B5, C4 (Envelope), C6 (Envelope), 
+						DL (Envelope), No. 10 (Envelope), 9 x 13 cm, 10 x 15 cm, 13 x 18 cm, 
+						13 x 20 cm, 20 x 25 cm, 100 x 148 mm, 16:9, LT, HLT, LGL, User defined</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Chargeur automatique de documents</td>
+						<td id="td2" width="80%">30 Pages</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Poids de papier qui convient</td>
+						<td id="td1" width="80%">64 g/m² - 256 g/m²</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Recto/verso</td>
+						<td id="td2" width="80%">Yes</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Capacité du bac de papier</td>
+						<td id="td1" width="80%">250 Sheets Standard, 500 Sheets Maximum</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Nombre de bacs papier</td>
+						<td id="td2" width="80%">2</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div id="contentTable8" class="mask_element">
+			<table id="tableauCarac">
+				<tbody>
+					<tr id="trth">
+						<th id="th" width="30%">Autres</th>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Mémoire</td>
+						<td id="td1" width="80%">128 MB Included, 128 MB Maximum</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Caractéristiques</td>
+						<td id="td2" width="80%">Direct scan-to-print without PC</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Ecran LCD</td>
+						<td id="td1" width="80%">Type: Color, Diagonal: 6,3 cm</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Garantie</td>
+						<td id="td2" width="80%">36 Mois sur site</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Emulations</td>
+						<td id="td1" width="80%">GDI</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
