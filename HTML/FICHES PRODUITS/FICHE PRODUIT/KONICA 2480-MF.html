@@ -272,28 +272,23 @@
 			<br />
 <div id="tabs-table">
 	<div id="tabs">
-		<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Caractéristiques imprimante</span></div>
+		<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Caractéristiques</span></div>
 		<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Capacités matérielles et logicielles</span></div>
 		<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Support couleur PS</span></div>
-		<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Interface</span></div>
 	<br/>
+		<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Interface</span></div>
 		<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Systèmes d'exploitation compatibles</span></div>
 		<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Gestion du papier</span></div>
-		<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Caractéristiques physiques</span></div>
 	<br/>	
-		<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Caractéristiques électriques</span></div>
-		<div id="choix9" onclick="toggle_div('contentTable9'); newid(this)"><span>Environnement</span></div>
-		<div id="choix10" onclick="toggle_div('contentTable10'); newid(this)"><span>Normes</span></div>
-	<br/>
-		<div id="choix11" onclick="toggle_div('contentTable11'); newid(this)"><span>Consommables</span></div>
-		<div id="choix12" onclick="toggle_div('contentTable12'); newid(this)"><span>Garantie</span></div>
+		<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Consommables</span></div>
+		<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Autres</span></div>
 	</div>
 	<div id="table">
 		<div id="contentTable1" class="mask_element">
 			<table id="tableauCarac">
 				<tbody>
 					<tr id="trth">
-						<th id="th" width="30%">Caractéristiques imprimante</th>
+						<th id="th" width="30%">Caractéristiques</th>
 					</tr>
 					<tr id="tr1">
 						<td id="td1" width="30%">Méthode d'impression</td>
@@ -320,6 +315,28 @@
 					<tr id="tr2">
 						<td id="td2" width="30%">Volume mensuel</td>
 						<td id="td2" width="80%"> 	35 000 pages par mois</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Type</td>
+						<td id="td1" width="80%">Imprimante laser avec contrôleur interne</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Dimensions (W x D x H)</td>
+						<td id="td2" width="80%">530 mm x 475 mm x 466 mm</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Poids</td>
+						<td id="td1" width="80%">Sans consommables : 28 kg </br>
+						Avec consommables : 30 kg</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Puissance requise</td>
+						<td id="td2" width="80%">Modèle 220V/240V : VAC ±10%, 50/60 ±3% Hz</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Consommation électrique</td>
+						<td id="td1" width="80%">Max. 1100W, en veille < 250W, en mode économie d'énergie < 28W
+						Conformité Energy Star* </td>
 					</tr>
 				</tbody>
 			</table>
@@ -449,84 +466,6 @@
 			<table id="tableauCarac">
 				<tbody>
 					<tr id="trth">
-						<th id="th" width="30%">Caractéristiques physiques</th>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Type</td>
-						<td id="td1" width="80%">Imprimante laser avec contrôleur interne</td>
-					</tr>
-					<tr id="tr2">
-						<td id="td2" width="30%">Dimensions (W x D x H)</td>
-						<td id="td2" width="80%">530 mm x 475 mm x 466 mm</td>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Poids</td>
-						<td id="td1" width="80%">Sans consommables : 28 kg </br>
-						Avec consommables : 30 kg</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="contentTable8" class="mask_element">
-			<table id="tableauCarac">
-				<tbody>
-					<tr id="trth">
-						<th id="th" width="30%">Caractéristiques électrique</th>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Puissance requise</td>
-						<td id="td1" width="80%">Modèle 220V/240V : VAC ±10%, 50/60 ±3% Hz</td>
-					</tr>
-					<tr id="tr2">
-						<td id="td2" width="30%">Consommation électrique</td>
-						<td id="td2" width="80%">Max. 1100W, en veille < 250W, en mode économie d'énergie < 28W
-						Conformité Energy Star* </td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="contentTable9" class="mask_element">
-			<table id="tableauCarac">
-				<tbody>
-					<tr id="trth">
-						<th id="th" width="30%">Environnement</th>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Température en fonctionnement</td>
-						<td id="td1" width="80%">En fonctionnement : 10° à 35°C,</br>
-						A l'arrêt : 0° à 35°</td>
-					</tr>
-					<tr id="tr2">
-						<td id="td2" width="30%">Humidité</td>
-						<td id="td2" width="80%">En fonctionnement : 15 à 85 % RH,</br>
-						A l'arrêt : 10 à 85 % RH</td>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Niveau sonore</td>
-						<td id="td1" width="80%">Impression : <53dBA,</br>
-						Copie : <57dBA,</br>
-						En veille : <39dBA</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="contentTable10" class="mask_element">
-			<table id="tableauCarac">
-				<tbody>
-					<tr id="trth">
-						<th id="th" width="30%">Normes</th>
-					</tr>
-					<tr id="tr1">
-						<td id="td1" width="30%">Normes</td>
-						<td id="td1" width="80%">UL, cUL, FCC-B, DOC, VCCI, CE Marking, C-Tick, CDRH</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-		<div id="contentTable11" class="mask_element">
-			<table id="tableauCarac">
-				<tbody>
-					<tr id="trth">
 						<th id="th" width="30%">Consommables</th>
 					</tr>
 					<tr id="tr1">
@@ -543,15 +482,35 @@
 				</tbody>
 			</table>
 		</div>
-		<div id="contentTable12" class="mask_element">
+		<div id="contentTable8" class="mask_element">
 			<table id="tableauCarac">
 				<tbody>
 					<tr id="trth">
-						<th id="th" width="30%">Garantie</th>
+						<th id="th" width="30%">Autres</th>
 					</tr>
 					<tr id="tr1">
 						<td id="td1" width="30%">Garantie</td>
 						<td id="td1" width="80%">Garantie de réparation de 1 an sur site PROTECT.REPAIR (en France métropolitaine uniquement)</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Normes</td>
+						<td id="td2" width="80%">UL, cUL, FCC-B, DOC, VCCI, CE Marking, C-Tick, CDRH</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Température en fonctionnement</td>
+						<td id="td1" width="80%">En fonctionnement : 10° à 35°C,</br>
+						A l'arrêt : 0° à 35°</td>
+					</tr>
+					<tr id="tr2">
+						<td id="td2" width="30%">Humidité</td>
+						<td id="td2" width="80%">En fonctionnement : 15 à 85 % RH,</br>
+						A l'arrêt : 10 à 85 % RH</td>
+					</tr>
+					<tr id="tr1">
+						<td id="td1" width="30%">Niveau sonore</td>
+						<td id="td1" width="80%">Impression : <53dBA,</br>
+						Copie : <57dBA,</br>
+						En veille : <39dBA</td>
 					</tr>
 				</tbody>
 			</table>

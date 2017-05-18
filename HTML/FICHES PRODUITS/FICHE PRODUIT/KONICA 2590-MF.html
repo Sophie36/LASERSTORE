@@ -1,0 +1,490 @@
+<meta charset="utf-8" />                  
+    <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>     
+    <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caractéristiques</h2>
+    <ul id="ulproduit">
+        <li id="liproduit">Imprimante multifonction Magicolor 2480</li>
+        <br />
+        <li id="liproduit">Capacité de 700 feuilles</li>
+    </ul>
+<br /><br /><br /><br /><br />
+<h2 id="h2produit">Présentation</h2>
+            <p>Aucune description marketing n'est disponible.<br /><br /></p>
+<h3 id="h3produit">Vue d'ensemble</h3>
+            <p>Konica Minolta  magicolor 2590MF Multifunction Printer - Couleur Laser - 20 ppm mono -  5 ppm Couleur - 2400 x 600 dpi - Imprimante, Copieur, Télécopie,  Scanner - USB, PictBridge, Réseau Systèmes d'exploitation compatibles</p>
+            <br />
+<h2 id="h2produit">Caractéristiques techniques </h2>
+            <br />
+<div id="tabs-table">
+    <div id="tabs">
+        <div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Caractéristiques</span></div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Capacités matérielles et logicielles</span></div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Support couleur PS</span></div>
+    
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Interface</span></div>
+    <br/>   
+        <div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Gestion du papier</span></div>
+       
+        <div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Consommables</span></div>
+        <div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Autres</span></div>
+    </div>
+    <div id="table">
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Caractéristiques</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Méthode d'impression</td>
+                        <td id="td1" width="80%">Système d'impression par double laser électrophotographique</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Vitesse d'impression</td>
+                        <td id="td2" width="80%">5 ppm en couleur,</br>
+                        20 ppm en monochrome</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Résolution</td>
+                        <td id="td1" width="80%">2400 x 600 dpi</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Temps de préchauffage</td>
+                        <td id="td2" width="80%">75 secondes ou moins </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Vitesse de sortie de la 1ère page</td>
+                        <td id="td1" width="80%">12 secondes en monochrome,</br>
+                        21 secondes en couleur</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Volume mensuel</td>
+                        <td id="td2" width="80%">   35 000 pages par mois</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Type</td>
+                        <td id="td1" width="80%">Imprimante laser avec contrôleur interne</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Dimensions (W x D x H)</td>
+                        <td id="td2" width="80%">530 mm x 475 mm x 531 mm</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Poids</td>
+                        <td id="td1" width="80%">Sans consommables : 28 kg </br>
+                        Avec consommables : 35,2 kg</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Puissance requise</td>
+                        <td id="td2" width="80%">VAC ±10%, 50/60 ±3% Hz</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Consommation électrique</td>
+                        <td id="td1" width="80%">1100 W (max.), <250 W (veille), Mode économie d'énergie <28 W. Compatibilité : Energy Star*</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Capacités matérielles et logicielles</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Mémoire</td>
+                        <td id="td1" width="80%">128 Mo de mémoire</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Emulations</td>
+                        <td id="td2" width="80%">Stocké dans la base hôte</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Support couleur</td>
+                        <td id="td1" width="80%">eAIDC (contrôle automatique amélioré de la densité d'image)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Enregistrement</td>
+                        <td id="td2" width="80%">9.4 secondes en monochrome (600 dpi),</br>
+                        23 secondes en couleur (600 dpi)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable3" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Support couleur PS</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Simulations couleur</td>
+                        <td id="td1" width="80%">600 x 600 dpi (max.)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable4" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Interface</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Interface standard</td>
+                        <td id="td1" width="80%">Ethernet 10/100BaseTX, USB 2.0 (High-Speed) et PictBridge (appareils photo numériques via port USB spécial)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Systèmes d'exploitation supportés</td>
+                        <td id="td2" width="80%">Windows XP, 2000, ME et 98 SE</td>
+                    </tr>
+                </tbody>            
+            </table>
+        </div>
+        <div id="contentTable5" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Gestion du papier</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Alimentation papier standard</td>
+                        <td id="td1" width="80%">200 feuilles</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Bac papier optionnel</td>
+                        <td id="td2" width="80%">Bac papier inférieur de 500 feuilles</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Capacité papier maximum</td>
+                        <td id="td1" width="80%">700 feuilles</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Sortie papier standard</td>
+                        <td id="td2" width="80%">Bac de réception de 100 feuilles (face vers le bas)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Formats acceptés</td>
+                        <td id="td1" width="80%">Bac papier multiformat : A4, A5, B5, Letter, Legal, J-Postcard,</br>
+                        Executive, Government Letter/Legal, Folio, enveloppes (C5/C6, monarch, DL, COM10),</br>
+                        double carte postale, Statement, UK Quarto, Foolscap, Letter plus et formats personnalisés</br>
+                        (92 à 216 mm x 210 à 356 mm) </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Types de supports acceptés</td>
+                        <td id="td2" width="80%">Bac papier inférieur : A4</br>
+                        Types de supports acceptés  Papier ordinaire (60 à 90 g/m²),</br>
+                        papier épais (91 à 163 g/m²),</br>
+                        papier recyclé (60 à 90 g/m²),</br>
+                        transparents, papier à en-tête,</br>
+                        enveloppes,</br>
+                        étiquettes,</br>
+                        cartes postales,</br>
+                        papier brillant</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Surface d'impression</td>
+                        <td id="td1" width="80%">4 mm des bords</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Impression recto verso</td>
+                        <td id="td2" width="80%">Automatique (option)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable6" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Consommables</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Consommables préinstallés</td>
+                        <td id="td1" width="80%">L'imprimante est livrée avec les toners cyan, magenta, jaune installés (rendement jusqu'à 1 500 pages) et noir (rendement jusqu'à 4 500 pages)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Remplacement des consommables</td>
+                        <td id="td2" width="80%">Standard : cyan, magenta et jaune (permettant d'imprimer jusqu'à 1 500 pages) Haute capacité : cyan, magenta, jaune et noir (rendement jusqu'à 4 500 pages)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable7" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Autres</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Garantie</td>
+                        <td id="td1" width="80%">Garantie de réparation de 1 an sur site PROTECT.REPAIR (en France métropolitaine uniquement)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Normes</td>
+                        <td id="td2" width="80%">UL, cUL, FCC-B, DOC, VCCI, CE Marking, C-Tick, CDRH</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Température en fonctionnement</td>
+                        <td id="td1" width="80%">En fonctionnement : 10° à 35°C,</br>
+                        A l'arrêt : 0° à 35°</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Humidité</td>
+                        <td id="td2" width="80%">En fonctionnement : 15 à 85 % RH,</br>
+                        A l'arrêt : 10 à 85 % RH</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Niveau sonore</td>
+                        <td id="td1" width="80%">Impression : <53dBA,</br>
+                        Copie : <57dBA,</br>
+                        En veille : <39dBA</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
