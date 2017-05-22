@@ -1,0 +1,590 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Vitesse et mémoire impressionnante</li>
+    <br />
+    <li id="liproduit">Nombreuses fonctions de copie</li>
+    <br />
+    <li id="liproduit">Simplicité de la connectivité USB</li>
+    
+</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Imaginez que vous remplacez votre appareil tout-en-un par une 
+imprimante plus petite, moins bruyante et infiniment plus esthétique. 
+Et mieux encore, qu'elle offre des fonctions couleur de qualité professionnelle. 
+La CLX-3170FN offre une vitesse d'impression de 16 ppm en noir et blanc 
+et de 4 ppm en couleur, une résolution réelle de 2400 x 600 p.p.p., 
+l'impression recto verso manuelle et la télécopie couleur. De plus, 
+toute cette productivité vous est proposée dans un appareil élégant au 
+fini noir mat. Petite. Puissante. Élégante.<br /><br /></p>
+<h3 id="h3produit">Vitesse et mémoire impressionnante</h3>
+<p>Ces nombres sont synonymes d'efficacité. La vitesse d'impression et 
+de copie élevée en format lettre est de 17 ppm pour le noir et blanc, et
+de 4 ppm pour la couleur. De plus, la CLX-3170FN offre une résolution 
+réelle de 2400 x 600 p.p.p. à l'impression, et une résolution améliorée 
+de 4800 x 4800 p.p.p. à la numérisation. Son télécopieur intégré numérise
+à 3 secondes par page et comporte une mémoire de 4 Mo. Voilà qui est 
+impressionnant!</p>
+<br />
+<h3 id="h3produit">Nombreuses fonctions de copie</h3>
+<p>La CLX-3170FN comporte beaucoup d'options de copie, petites et grandes. 
+Elle offre des fonctions de réduction/d'agrandissement de 25 à 400 pour 
+cent, ainsi que la copie de deux ou de quatre feuilles et plus sur une 
+seule page, la copie d'affiches et la copie en mode clone. On y retrouve 
+même une fonction de copie de carte d'identité qui permet de copier et 
+d'imprimer le recto et le verso de la carte sur une seule page rapidement 
+et facilement.</p>
+<br />
+<h3 id="h3produit">Technologie d'impression discrète NO NOISMC</h3>
+<p>La CLX-3170FN est dotée du moteur d'impression NO NOIS exclusif à SAMSUNG. 
+Contrairement aux imprimantes traditionnelles, les cartouches d'encre 
+sont fixées solidement en place, de façon à permettre une impression 
+pratiquement silencieuse.</p>
+<br />
+<h3 id="h3produit">Simplicité de la connectivité USB</h3>
+<p>La connectivité USB se traduit par une simplicité et une polyvalence 
+inégalées.Imprimez rapidement - sans avoir recours à un PC - en branchant 
+n'importe quel téléphone ou appareil photo PictBridgeMC directement à 
+l'imprimante. Vous pouvez aussi brancher la mémoire USB à l'imprimante 
+et imprimer instantanément. Même si vous n'avez pas accès à un PC, vous 
+avez la possibilité d'enregistrer le document numérisé directement dans 
+une mémoire USB.</p>
+<br />
+<h3 id="h3produit">Cartouches d'encre novatrices</h3>
+<p>Le changement des cartouches d'encre ne pourrait pas se faire plus 
+rapidement - ni plus aisément. Les mini cartouches d'encre sont assez 
+petites pour être placées dans la paume de la main, ce qui les rend plus 
+faciles à manipuler que les grosses cartouches. Ouvrez le couvercle, 
+retirez l'ancienne cartouche et insérez la nouvelle cartouche, et vous 
+voilà prêt à imprimer.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Samsung - CLX-6220FX - Imprimante multifonction laser couleur -
+Copieur / Scanner / Fax - 20 ppm - Recto-Verso - USB - Réseau - 
+Fast Ethernet - PC, Linux, Mac </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Aperçu</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Impression</span></div>
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Copie</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Numérisation</span></div>
+<br />
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Télécopie</span></div>
+<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Manipulation</span></div>
+<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Généralités</span></div>
+<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Consommables</span></div>
+</div>
+<div id="table">
+<div id="contentTable1" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Aperçu</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Fonction</td>
+            <td id="td1" width="80%">Impression couleur, copie, numérisation, télécopie </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable2" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Impression</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse (monochrome)</td>
+            <td id="td1" width="80%">Jusqu'à 16 ppm en format A4 (17 ppm en format lettre)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Vitesse (couleur)</td>
+            <td id="td2" width="80%">Jusqu'à 4 ppm en format A4 (4 ppm en format lettre)</td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Délai pour la première impression (monochrome)</td>
+            <td id="td1" width="80%">Moins de 14 secondes </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Résolution </td>
+            <td id="td2" width="80%">Résolution réelle de jusqu'à 2400 x 600 p.p.p.</td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Délai pour la première impression (couleur) </td>
+            <td id="td1" width="80%">Moins de 26 secondes </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Duplex </td>
+            <td id="td2" width="80%">Manuel</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Impression recto verso</td>
+            <td id="td1" width="80%">SPL-C (langage d'impression couleur SAMSUNG)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable3" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Copie</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Délai pour la première copie (monochrome) </td>
+            <td id="td1" width="80%">Moins de 18 secondes </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Copie multiple </td>
+            <td id="td2" width="80%">1 à 99</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Étendue du zoom </td>
+            <td id="td1" width="80%">25% à 400% (plaque), 25% à 100% (alimenteur automatique de documents) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Fonctions de copie</td>
+            <td id="td2" width="80%">Copie de cartes d'identité, copie en mode clone, copie d'un nombre déterminé 
+			de feuilles sur une même page, copie d'affiches </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Résolution </td>
+            <td id="td1" width="80%">Mode texte, texte/photo, magazine : jusqu'à 600 x 600 p.p.p.; mode photo : 
+			jusqu'à 1200 x 1200 p.p.p. </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Vitesse (monochrome) </td>
+            <td id="td2" width="80%">Jusqu'à 16 ppm en format A4 (17 ppm en format lettre)</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse (couleur) </td>
+            <td id="td1" width="80%">Jusqu'à 4 ppm en format A4 (4 ppm en format lettre) </td>
+        </tr>
+		<tr id="tr2">
+            <td id="td2" width="30%">Délai pour la première copie (couleur) </td>
+            <td id="td2" width="80%">Moins de 45 secondes </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable4" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Numérisation</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Compatibilité</td>
+            <td id="td1" width="80%">Norme TWAIN, norme WIA (Windows 2003/XP/Vista) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Méthode</td>
+            <td id="td2" width="80%">Numériseur couleur à plat ou alimenteur automatique </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Résolution (optique) </td>
+            <td id="td1" width="80%">Jusqu'à 1200 x 1200 p.p.p. </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Résolution (améliorée) </td>
+            <td id="td2" width="80%">Jusqu'à 4800 x 4800 p.p.p. </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Numérisation vers </td>
+            <td id="td1" width="80%">Numérisation vers USB/dossier/application/réseau</td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+<div id="contentTable5" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Télécopie</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Compatibilité </td>
+            <td id="td1" width="80%">UIT-T G3 </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Vitesse du modem </td>
+            <td id="td2" width="80%">33,6 Kbps </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Résolution </td>
+            <td id="td1" width="80%">Jusqu'à 300 x 300 p.p.p. (noir et blanc), jusqu'à 200 x 200 p.p.p. (couleur) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Mémoire</td>
+            <td id="td2" width="80%">2 Mo </td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Composition automatique</td>
+            <td id="td1" width="80%">Oui</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Fonctions de télécopie </td>
+            <td id="td2" width="80%">Télécopie couleur, télécopie PC (envoi en noir et blanc seulement) </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable6" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Manipulation</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Types et capacité d'entrée </td>
+            <td id="td1" width="80%">Bac d'alimentation de 150 feuilles</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Types et capacité de sortie </td>
+            <td id="td2" width="80%">Jusqu'à 80 feuilles face vers le bas </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Taille du support </td>
+            <td id="td1" width="80%">76 x 160 mm (3,0 x 6,3 po) ~ 216 x 356 mm (8,5 x 14,0 po) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Type de support </td>
+            <td id="td2" width="80%">Enveloppes, étiquettes, cartes, acétates, 
+			papier (préimprimé, glacé, perforé, recyclé) </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Capacité de l'alimenteur automatique de document </td>
+            <td id="td1" width="80%">15 pages </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Taille de l'alimenteur automatique de document </td>
+            <td id="td2" width="80%">76 x 127 mm (3,0 x 5,0 po) ~ 216 x 356 mm (8,5 x 14,0 po) </td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+<div id="contentTable7" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Généralités</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">ACL</td>
+            <td id="td1" width="80%">Écran ACL de 2 lignes</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Mémoire/stockage</td>
+            <td id="td2" width="80%">128 Mo </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Système d'exploitation compatibles </td>
+            <td id="td1" width="80%">Windows 2000/XP/2003/Vista, divers systèmes 
+			d'exploitation Linux dont Red Hat 8.0 à 9.0, Mandrake 9.2 à 10.1, 
+			SuSE 8.2 à 9.2 et Fedora Core 1 à 4, Mac OS X 10.3 à 10.5 </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Interface </td>
+            <td id="td2" width="80%">USB 2.0 haute vitesse, Ethernet 10/100 Base-TX </td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Niveau de bruit </td>
+            <td id="td1" width="80%">Moins de 48 dBA (impression), moins de 52 dBA (copie), 
+			moins de 27 dBA (mode attente) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Cycle d'utilisation mensuel </td>
+            <td id="td2" width="80%">Jusqu'à 20000 pages</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Dimensions (L x P x H)</td>
+            <td id="td1" width="80%">415 x 373 x 342 mm (16,3 x 14,7 x 13,5 po) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Poids</td>
+            <td id="td2" width="80%">15,2 kg (33,5 lb) </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable8" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Consommables</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Cartouche d'encre noire </td>
+            <td id="td1" width="80%">Rendement moyen continu d'une cartouche 
+			d'encre noire : 1500 pages ordinaires (se vend avec une cartouche 
+			d'encre ordinaire de 1000 pages)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Cartouche d'encre jaune/magenta/cyan </td>
+            <td id="td2" width="80%">Rendement moyen continu d'une cartouche 
+			d'encre jaune/magenta/cyan : 1000 pages ordinaires (se vend avec 
+			une cartouche d'encre ordinaire de 700 pages) </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Module d'imagerie </td>
+            <td id="td1" width="80%">Environ 24000 pages (noir et blanc), 6000 pages (couleur)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Réservoir de récupération de poudre d'encre</td>
+            <td id="td2" width="80%"Environ 10000 pages (noir et blanc</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>

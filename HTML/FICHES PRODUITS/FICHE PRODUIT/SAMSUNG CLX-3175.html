@@ -1,0 +1,547 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Ce modèle n'est plus disponible</li>
+    <br />
+    <li id="liproduit">Le nouveau modèle est disponible ici  : 
+	<a href="http://www.laser-store.fr/imprimante-multifonction-laser-couleur-samsung-clx3185-p-407.html" 
+	style="font-weight: bold;">Imprimante-multifonction-laser-couleur-samsung-clx3185 <br /></a></li>
+</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Débarrassez-vous de votre imprimante multifonction à jet d'encre ou 
+à laser encombrante et optez pour la plus petite imprimante multifonction 
+laser couleur. Maintenant, vous avez toutes les excuses pour craquer!<br /><br /></p>
+<h3 id="h3produit">Plus silencieuse que d'autres imprimantes laser couleur ou 
+multifonctions à jet d'encre</h3>
+<p>Le laboratoire de tests BLI a certifié que la est l'imprimante testée 
+la plus silencieuse en termes de vibrations et d'émissions sonores 
+moyennes.</p>
+<br />
+<h3 id="h3produit">Plus rapide que d'autres imprimantes laser couleur</h3>
+<p>La CLX-3175 imprime des documents en noir et blanc plus rapidement que 
+d'autres imprimantes laser. Ce détail a son importance, quand on sait que 
+près de 70% des impressions effectuées avec une imprimante laser couleur 
+ou une imprimante multifonction se font en noir et blanc. La CLX-3175 
+produit des tirages couleur durables qui résistent à l'eau et au temps 
+qui passe. Les impressions effectuées avec des appareils à jet d'encre, 
+en revanche, sont sensibles à l'exposition à l'eau et à l'humidité et 
+leurs images pâlissent avec le temps.</p>
+<br />
+<h3 id="h3produit">Plus compacte que d'autres imprimantes laser couleur 
+ou appareils multifonctions à jet d'encre</h3>
+<p>Cette imprimante laser couleur performante, compacte et esthétique a 
+été conçue de manière à ce qu'elle convienne à tous les environnements 
+professionnels. Il est désormais également possible aux petites entreprises 
+et aux personnes qui ont leur bureau à la maison de profiter des avantages 
+et de la qualité incomparable d'une imprimante laser couleur. Grâce à ses 
+petites dimensions de 415 mm x 360 mm x 311 mm, cette imprimante laser 
+couleur trouvera sa place sur chaque bureau ou place de travail. Elle ne 
+prend qu'une toute petite place sur votre bureau.</p>
+<br />
+<h3 id="h3produit">Plus compacte que d'autres imprimantes laser couleur</h3>
+<p>Cette imprimante laser couleur performante, compacte et esthétique a été 
+conçue de manière à ce qu'elle convienne à tous les environnements professionnels. 
+Il est désormais également possible aux petites entreprises et aux personnes 
+qui ont leur bureau à la maison de profiter des avantages et de la qualité 
+incomparable d'une imprimante laser couleur. Grâce à ses petites dimensions 
+de 415 mm x 360 mm x 311 mm, cette imprimante laser couleur trouvera sa 
+place sur chaque bureau ou place de travail.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Samsung - CLX-3175 - Imprimante multifonction laser couleur 3 en 1 - 
+Imprimante / Copieur / Scanner - USB 2.0 - PC, Linux, Mac </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Copie</span></div>
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Numérisation</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Général</span></div>
+<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Consommables</span></div>
+<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Options</span></div>
+</div>
+<div id="table">
+<div id="contentTable1" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Impression</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse (mono) </td>
+            <td id="td1" width="80%">Jusqu'à 16 ppm A4 </td>
+        </tr>
+		<tr id="tr2">
+            <td id="td2" width="30%">Vitesse (couleur)</td>
+            <td id="td2" width="80%">Jusqu'à 4 ppm A4 </td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Temps de sortie 1ère page (mono)</td>
+            <td id="td1" width="80%">Moins de 14 secondes</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Temps de sortie 1ère page (couleur) </td>
+            <td id="td2" width="80%">Moins de 26 secondes</td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Résolution</td>
+            <td id="td1" width="80%">Jusqu'à 2.400 x 600 dpi </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Emulation </td>
+            <td id="td2" width="80%">SPL-C (SAMSUNG Printer Language Color) </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Duplex</td>
+            <td id="td1" width="80%">Manuel </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable2" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Copie</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Vitesse (mono)</td>
+            <td id="td1" width="80%">Jusqu'à 12 ppm A4 </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Vitesse (couleur)</td>
+            <td id="td2" width="80%">Jusqu'à 4 ppm A4</td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Résolution</td>
+            <td id="td1" width="80%">Modes texte, texte/photo, 
+			magazine : jusqu'à 600 x 600 dpi, mode photo : jusqu'à 1.200 
+			x 1.200 dpi </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Temps de sortie 1ère page (mono)</td>
+            <td id="td2" width="80%">Moins de 18 secondes</td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Temps de sortie 1ère page (couleur)</td>
+            <td id="td1" width="80%">Moins de 45 secondes </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Taux zoom</td>
+            <td id="td2" width="80%">25 ~ 400% (vitre)</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Copie multiple </td>
+            <td id="td1" width="80%"> 	1 ~ 99 </td>
+        </tr>
+		<tr id="tr2">
+            <td id="td2" width="30%">Copie duplex </td>
+            <td id="td2" width="80%">Aucune information</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Fonctions de copie</td>
+            <td id="td1" width="80%">Copie ID, copie clone, copie N-UP, copie d'affiches </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable3" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Numérisation</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Compatibilité</td>
+            <td id="td1" width="80%">TWAIN Standard, WIA Standard (Windows XP uniquement) </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Méthode</td>
+            <td id="td2" width="80%">Scanner couleur</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Résolution (optique)</td>
+            <td id="td1" width="80%">Jusqu'à 1.200 x 1.200 dpi </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Résolution (optimisée)</td>
+            <td id="td2" width="80%">Jusqu'à 4.800 x 4.800 dpi </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Numérisation vers</td>
+            <td id="td1" width="80%">USB / fichier</td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+<div id="contentTable4" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Gestion du papier</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Types et capacité d’alimentation</td>
+            <td id="td1" width="80%">Tiroir 150 feuilles</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Types et capacité en sortie</td>
+            <td id="td2" width="80%">80 feuilles face imprimée dessous </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Format papier </td>
+            <td id="td1" width="80%">76 x 160 mm ~ 216 x 356 mm</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Type de supports</td>
+            <td id="td2" width="80%">Enveloppes, étiquettes, transparents </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Capacité alimentation automatique </td>
+            <td id="td1" width="80%">Aucune information </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Taille de documents pour alimentation automatique </td>
+            <td id="td2" width="80%">Aucune information </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable5" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Général</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">LCD </td>
+            <td id="td1" width="80%">LCD 2 lignes</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Mémoire</td>
+            <td id="td2" width="80%">128 MB </td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Compatibilité OS </td>
+            <td id="td1" width="80%">Windows 98/Me/2000/XP/Vista/2003, 
+			divers Linux OS comprenant Red Hat 8.0~9.0, Fedora Core 1~4, 
+			Mandrake 9.2~10.1, SuSE 8.2~9.2, Mac OS X 10.3~10.4 </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Interface </td>
+            <td id="td2" width="80%">USB 2.0 haut-débit </td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Niveau sonore</td>
+            <td id="td1" width="80%">Moins de 48 dBA (impression) moins de 
+			50 dBA (copie) moins de 27 dBA (veille)</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Facteur d’utilisation (par mois)</td>
+            <td id="td2" width="80%">20.000 pages </td>
+        </tr>
+		<tr id="tr1">
+            <td id="td1" width="30%">Dimensions (L x P x H) </td>
+            <td id="td1" width="80%">415 x 360 x 311 mm </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Poids</td>
+            <td id="td2" width="80%">14,5 kg</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div id="contentTable6" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Consommables</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Cartouche toner noir </td>
+            <td id="td1" width="80%">1.500 pages standard </td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Cartouche toner jaune/magenta/cyan</td>
+            <td id="td2" width="80%">1.000 pages standard</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Unité d’image </td>
+            <td id="td1" width="80%">Env. 24.000 pages</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td2" width="30%">Courroie de transfert </td>
+            <td id="td2" width="80%">Aucune information</td>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Collecteur de toner usagé </td>
+            <td id="td1" width="80%">Env. 10.000 pages N/B (2.500 pages couleur) </td>
+        </tr>
+        
+    </tbody>
+</table>
+</div>
+<div id="contentTable7" class="mask_element">
+<table id="tableauCarac">
+    <tbody>
+        <tr id="trth">
+            <th id="th" width="30%">Options</th>
+        </tr>
+        <tr id="tr1">
+            <td id="td1" width="30%">Options</td>
+            <td id="td1" width="80%">Aucune information</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+</div>
