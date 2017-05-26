@@ -1,0 +1,413 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Vitesse d’impression 16 ppm en noir comme en couleur</li>
+    <br/>
+    <li id="liproduit">Économies de matériel grâce au partage Réseau entres plusieurs utilisateurs</li>
+    <br/>
+    <li id="liproduit">Capacité papier 250 feuilles</li>
+    <br/>
+    <li id="liproduit">Garantie standard 1 an Réparation technicien sur site </li>
+</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Une imprimante couleur LED réseau Ethernet. Idéale pour les petites entreprises, elle est rapide et économique.<br /><br /></p>
+
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Consommation</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Général</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Méthode d'impression</td>
+                    <td id="td1" width="80%">Electrophotographique LED (monopasse pour les 4 couleurs)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d'impression</td>
+                    <td id="td2" width="80%">N & B : Jusqu'à 16 ppm<br/>
+                                            Couleur : Jusqu'à 16 ppm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps 1ère impression</td>
+                    <td id="td1" width="80%">Moins de 16 secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution d'impression</td>
+                    <td id="td2" width="80%">Jusqu'à 2400 x 600 dpi</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore </td>
+                    <td id="td1" width="80%">Impression : Moins de 53 dB  <br/>Attente : Moins de 30 dB  </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulation</td>
+                    <td id="td2" width="80%">GDI</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion du papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Capacité papier</td>
+                    <td id="td1" width="80%">Standard : Jusqu'à 250 feuille(s)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie Papier</td>
+                    <td id="td2" width="80%">Face dessus : Jusqu'à 1 feuille(s)<br/>Face dessous : Jusqu'à 150 feuille(s)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommation</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Consommation </td>
+                    <td id="td1" width="80%">En impresssion : Moins de 480 Watts<br/>En attente : Moins de 70 Watts<br/>En veille : Moins de 8 Watts</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Processeur</td>
+                    <td id="td1" width="80%">300 Mhz </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Affichage à cristaux liquides (LCD)</td>
+                    <td id="td2" width="80%">1 ligne de 16 caractères</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de chauffe </td>
+                    <td id="td1" width="80%">Moins de 27 secondes </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Ecologie</td>
+                    <td id="td2" width="80%">Economie de toner : Oui</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Economie d'énergie</td>
+                    <td id="td1" width="80%">Oui</td>
+                </tr>
+            
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">Standard : 32 Mo</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">En option</td>
+                    <td id="td1" width="80%">Extension : jusqu'à 576 Mo 1 carte SO-DIMM standard (144 broches) Mo</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Interface</td>
+                    <td id="td2" width="80%">21.44 kg Standard : USB 2.0 High Speed</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Pilotes</td>
+                    <td id="td1" width="80%">Windows : Pilote d'impression GDI pour Windows® 2000 Pro, XP édition familiale, XP Pro (SP1 et SP2), Windows Server® 2003 (versions 32 et 64 bits), Windows VistaTM</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Linux</td>
+                    <td id="td2" width="80%">Pilote d'impression Linux pour système d'impression CUPS (environnement x86, x64) ; et système LPD/LPRng (environnement x86, x64)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Macintosh </td>
+                    <td id="td1" width="80%">Pilote d'impression Macintosh pour Mac OS X 10.3.9 ou supérieur</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Protocoles</td>
+                    <td id="td2" width="80%">TCP/IP ; IPv4 et IPv6</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Réseau</td>
+                    <td id="td1" width="80%">40 000 pages 10/100 Base Tx intégrée</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">LED</td>
+                    <td id="td2" width="80%">Deux LED, impression de données et erreurs</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions (LxHxP) </td>
+                    <td id="td1" width="80%">409 x 466 x 250 mm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids</td>
+                    <td id="td2" width="80%">19,0 Kg</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Garantie </td>
+                    <td id="td1" width="80%">1 an technicien sur site extensible à 3 ou 5 ans technicien sur site </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>
