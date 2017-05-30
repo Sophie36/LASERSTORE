@@ -1,0 +1,546 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Multifonction Laser couleur</li>
+    <br/>
+    <li id="liproduit">Impression couleur économique 4 en 1</li>
+</ul>
+<br /><br /><br /><br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>L’importance que SAMSUNG accorde à une impression couleur de grande qualité et à la pointe de la technologie a conduit au développement de cette gamme d'imprimantes multifonctions. Si votre entreprise nécessite des performances élevées en matière d’impression, de numérisation et de copie, notre nouvelle gamme de multifonction couleur professionnel représentent la solution idéale. La SAMSUNG CLX-6220FX offre toujours des copies, des numérisations et des impressions couleur parfaites, tout en minimisant les coûts d'exploitation.<br /><br /></p>
+<h3 id="h3produit">Haute résolution</h3>
+<p>La communication représente la clef des affaires. La qualité de l’impression couleur peut permettre à votre entreprise de se démarquer des autres. La gamme SAMSUNG CLX-6220FX / 6250FX vous offre une qualité d’impression exceptionnelle grâce à une résolution de 9600 x 600 dpi et à une grande brillance – pour des documents réellement professionnels.</p>
+<br />
+<h3 id="h3produit">Impression recto verso</h3>
+<p>La gamme SAMSUNG CLX-6220FX / 6250FX facilite l’impression recto verso, puisqu’il n’est plus nécessaire de réinsérer le papier. En effet, l’alimentation automatique recto verso permet de gagner du temps et de l’argent en chargeant plusieurs feuilles en même temps et en permettant d’imprimer automatiquement des documents des deux côtés, y compris les fax. </p>
+<br />
+<h3 id="h3produit">Mode économie d’énergie</h3>
+<p>Réduit le coût de l’impression et abaisse la température de l’appareil, créant ainsi un environnement plus durable pour les composants de l'imprimante. L’usure est minimisée, ce qui permet d’améliorer la qualité et de limiter le remplacement de pièces.</p>
+<br />
+<h3 id="h3produit">Blue Compass Navigation</h3>
+<p>Blue Compass Navigation, l’écran LCD à 4 lignes unique signé SAMSUNG, est facile à apprivoiser et son utilisation est un jeu d'enfant. Vous êtes ainsi plus productif, plus rapidement. La fenêtre de navigation vous permet d’accéder instantanément à toutes les fonctions d’impression et à toutes les commandes. Des touches et des menus simples et intuitifs vous permettent d’éviter de perdre du temps à apprendre à utiliser votre appareil et à résoudre des problèmes. L’écran LCD à quatre lignes est convivial et vous permet de réaliser vos opérations rapidement et simplement. En outre, vous avez accès à toutes les informations nécessaires, telles que l’état des tâches en cours, le niveau de toner, les éventuels bourrages de papier, le papier manquant et les avertissements en cas de capot ouvert.<br/></p>
+<br />
+<h3 id="h3produit">Gestion du toner</h3>
+<p>Le mode d’économie de toner vous permet de gérer et de limiter efficacement votre utilisation de toner pour plus de rentabilité. Le fait d’utiliser moins d'encre sur chaque page peut allonger la durée de vie de votre cartouche et entraîner une réduction significative du coût par page et un résultat favorable à l’environnement.</p>
+<br />
+<h3 id="h3produit">Connexion USB directe</h3>
+<p>La gamme SAMSUNG CLX-6220FX / 6250FX est dotée des dernières technologies, pour garantir une compatibilité parfaite. Un port USB est situé à l'avant de l'appareil, ce qui vous permet d'accéder facilement à des fichiers stockés sur votre clef USB et de les imprimer. Gagnez du temps en imprimant directement depuis votre clef USB, grâce à une compatibilité avec une large palette de formats de fichiers (PDF, BMP, TIFF et JPEG).</p>
+<br />
+<h3 id="h3produit">Ecoénergétique</h3>
+<p>La technologie Instant Fusing de SAMSUNG utilise des lampes à faible consommation pour chauffer le rouleau intérieur de l'imprimante, au lieu d'éléments de chauffage traditionnels plus gourmands en énergie. L’imprimante est ainsi plus écoénergétique et plus efficace.</p>
+<br />
+<h3 id="h3produit">Consommables</h3>
+<p>La CLX-6220FX de SAMSUNG offre également un grand choix de consommables correspondants à votre budget. Les cartouches haute capapcité sont idéales en cas de besoins importants, puisqu'elles durent longtemps et vous offrent un coût par page plus faible. A l'inverse, les cartouches plus petites vous permettent d'atteindre un coût initial plus bas. CLT-K5082S: Toner noir: 2500 pages. CLT-M5082S: Toner magenta: 2000 pages. CLT-Y5082S: Toner jaune: 2000 pages. CLT-C5082S: Toner cyan: 2000 pages. CLT-K5082L: Toner noir haute capacité: 5000 pages. CLT-M5082L: Toner magenta haute capacité: 4000 pages. CLT-Y5082L: Toner jaune haute capacité: 4000 pages. CLT-C5082L: Toner cyan haute capacité: 4000 pages.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Samsung - CLX-6220FX - Imprimante multifonction laser couleur - Copieur / Scanner / Fax - 20 ppm - Recto-Verso - USB - Réseau - Fast Ethernet - PC, Linux, Mac</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Copieur</span></div>
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Scanner</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Fax</span></div>
+<br />
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Gestion du papier</span></div>
+<div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Général</span></div>
+<div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Consommables</span></div>
+<div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Options</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse (mono)</td>
+                    <td id="td1" width="80%">20 ppm en A4</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse (couleur)</td>
+                    <td id="td2" width="80%">20 ppm en A4</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ere impression N&B</td>
+                    <td id="td1" width="80%">24 secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Temps de sortie 1ere impression couleur</td>
+                    <td id="td2" width="80%">24 secondes</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">9600 x 600 dpi</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Langage(s) d'impression</td>
+                    <td id="td2" width="80%">PostScipt3, PCL5c, PCL6, SPL-C (SAMSUNG Printer Language Color)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Recto Verso</td>
+                    <td id="td1" width="80%">Standard</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Copieur</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse A4 N&B</td>
+                    <td id="td1" width="80%">20 ppm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse A4 couleur</td>
+                    <td id="td2" width="80%">20 ppm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">9600 x 600 dpi</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Temps de sortie 1ere impression N&B</td>
+                    <td id="td2" width="80%">27 secondes</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Zoom</td>
+                    <td id="td1" width="80%">25 ~ 400% (vitre d'exposition), 25 ~ 100% (chargeur)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Multicopie</td>
+                    <td id="td2" width="80%">1 ~ 99</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ere impression couleur</td>
+                    <td id="td1" width="80%">28 secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Fonctions copie</td>
+                    <td id="td2" width="80%">Duo copie, Copie Clone, N-up Copy, Poster, Fond de page, livret</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Scanner</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité</td>
+                    <td id="td1" width="80%">TWAIN Standard, WIA Standard (Windows XP only)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Méthode</td>
+                    <td id="td2" width="80%">Scanner couleur CCD</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution optique</td>
+                    <td id="td1" width="80%">601 x 1200 dpi</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution améliorée</td>
+                    <td id="td2" width="80%">4800 x 4800 dpi</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Scanner vers</td>
+                    <td id="td1" width="80%">USB / SMB / FTP / Réseau / Email / Application</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Fax</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité </td>
+                    <td id="td1" width="80%">ITU-T G4</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution</td>
+                    <td id="td2" width="80%">301 x 300 dpi (N&B),<br/> 200 x 200 dpi (Couleur)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse du modem</td>
+                    <td id="td1" width="80%">33.6 Kbps</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">8 Mo</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Numérotation rapide</td>
+                    <td id="td1" width="80%">Oui</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Fonctions Fax</td>
+                    <td id="td2" width="80%">Fax Couleur, PC-Fax (en N&B seulement, également avec SmarThru Office)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <div id="contentTable5" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Entrée papier</td>
+                    <td id="td1" width="80%">Bac 250 feuilles, bac multifonction 100 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie papier</td>
+                    <td id="td2" width="80%">170 feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Capacité papier maximum</td>
+                    <td id="td1" width="80%">850 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Format</td>
+                    <td id="td2" width="80%">76 x 127 mm ~ 216 x 356 mm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type</td>
+                    <td id="td1" width="80%">Enveloppes, étiquettes, carte de visites, Archive</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Chargeur de document, capacité</td>
+                    <td id="td2" width="80%">50 feuilles recto / verso</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Chargeur de document, tailles</td>
+                    <td id="td1" width="80%">Largeur: 142 ~ 216 mm, Longeur: 148 ~ 356 mm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable6" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%"> LCD</td>
+                    <td id="td1" width="80%">4 lignes LCD</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">256 MB (Max. 512 MB)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilté environnement</td>
+                    <td id="td1" width="80%">Windows 2000 / XP / 2003 / Vista 2008 / 7 / 2008R2, Red Hat 8.0 ~ 9.0, Mandraket 9.2 ~ 10.1, SuSE 8.2 ~ 9.2 and Fedora Core 1 ~ 4 etc. Various Linux OS, Mac OS X 10.3 ~ 10.6</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Interface</td>
+                    <td id="td2" width="80%">Hi-Speed USB 2.0, Ethernet 10 / 100Base-TX</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore</td>
+                    <td id="td1" width="80%">Moins de 53 dBA (Impression), moins de 54 dBA (Copie), moins de 32 dBA (en veille)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel maximum</td>
+                    <td id="td2" width="80%">65,000 pages</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions (L x P x H)</td>
+                    <td id="td1" width="80%">468 x 498 x 651</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids</td>
+                    <td id="td2" width="80%">37.4 kgs </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable7" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartouche noire</td>
+                    <td id="td1" width="80%">CLT-K5082L: 5000 standard pages<br/>CLT-K5082S: 2500 standard pages</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Cartouches couleur (Cyan,Magenta,Jaune)</td>
+                    <td id="td2" width="80%">CLT-C5082S/L / CLT-M5082S/L / CLT-Y5082S/L: 2000 / 4000 standard pages</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable8" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Options</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Options</td>
+                    <td id="td1" width="80%">Mémoire 128 / 256 Mo, 1 bac papier 500 feuilles</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>
