@@ -1,0 +1,376 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Laser couleur compacte</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Imprimante haute vitesse jusqu’à 30 pages par minute en couleur et en noir&blanc <br /></p>
+<p>Intégration en standard de l’unité recto-verso pour la version magicolor 4750DN avec 100% de performance<br /></p>
+<p>Alimentation papier flexible avec des formats allant du A6 au A4 et des grammages papier compris entre 60 et 210 g/m²<br /></p>
+<p>Imprimante compacte avec une qualité d’impression brillante grâce au toner polymère Simitri® HD<br /></p>
+<br/>
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Konica - 4750EN - Imprimante laser couleur - USB 2.0, Réseau Ethernet 10/100/1000 Base-T - PC, Linux, Mac</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Autres</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse d'impression</td>
+                    <td id="td1" width="80%">A4: Jusqu'à 30 ppm couleur et monochrome<br/>A4 Autoduplex: Jusqu'à 30 ppm couleur et monochrome</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Temps de première copie</td>
+                    <td id="td2" width="80%">12.9 secondes couleur et monochrome</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Warm-up time</td>
+                    <td id="td1" width="80%">Environ 39 secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Print resolution</td>
+                    <td id="td2" width="80%">600 x 600 ppp x 3 bit</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Grammage papier</td>
+                    <td id="td1" width="80%">Papier normal (60-90 g/m²)<br/>Papier recyclé (60-90 g/m²)<br/>Papier épais I (91-150 g/m²)<br/>Papier épais II (151-210 g/m²)<br/>Papier couché I (100-128 g/m²)<br/>Papier couché II (129-158 g/m²)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité papier en entrée</td>
+                    <td id="td2" width="80%">Standard: magasin papier 250 feuilles, bac d'alimentation polyvalent 100 feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Volume d'impression (mensuel)</td>
+                    <td id="td1" width="80%">Recommandé: Moyenne 1,100 pages<br/>Max.: 120,000 pages</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Système</td>
+                    <td id="td1" width="80%">Imprimante laser couleur A4</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Controleur</td>
+                    <td id="td2" width="80%">800 MHz</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Système d'exploitation</td>
+                    <td id="td1" width="80%">Windows: 2000, Server 2003 (32/64), Server 2008 (32/64), Vista (32/64), XP, 7 (32/64)Macintosh: OSX 10.2.8, 10.3.9, 10.4, 10.5, 10.6 Linux: Redhat, SUSE Netware: Netware 4, 5, 6</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Interface</td>
+                    <td id="td2" width="80%">Ethernet 10/100/1000 Base-T<br/>USB 2.0 (haute vitesse)<br/>Port USB</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Mémoire</td>
+                    <td id="td1" width="80%">Standard: 256 Mo, Max.: 768 Mo</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Disque dur</td>
+                    <td id="td2" width="80%">40 Go option</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Consommation énergie</td>
+                    <td id="td1" width="80%">Alimentation: 220-240V (+/-10%)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Dimensions (LxlxH, mm)</td>
+                    <td id="td2" width="80%">419 x 523 x 330 mm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Poids</td>
+                    <td id="td1" width="80%">magicolor 4750EN: 21.5 kg sans consomables, 26,1 <br/>avec consomables<br/>magicolor 4750DN: 22.3 kg sans consomables, 26.8 kg  avec consomables</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Autres</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Logiciels</td>
+                    <td id="td1" width="80%">PageScope NetCare Device Manager<br/>PageScope WebConnection<br/>PageScope Direct Print<br/>PageScope Data Administrator</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>
