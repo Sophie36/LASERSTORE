@@ -1,0 +1,397 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Laser couleur</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>La magicolor 5670 est la solution d'impression laser couleur des professionnels pour lesquels la rapidité et la qualité d'impression sont essentiels. Capable d'imprimer 25,6 ppm en couleur, 30 ppm en monochrome et une première page en 8 secondes, elle convient parfaitement aux groupes de travail les plus exigeants ayant des besoins différents.<br /></p>
+<br/>
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Konica Minolta Imprimante laser magicolor 5670 - Couleur Laser - 30 ppm mono - 25,6 ppm Couleur - PC & MAC</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Autres</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Méthode d'impression</td>
+                    <td id="td1" width="80%">Imprimante laser couleur A4 à technologie monopasse</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d'impression</td>
+                    <td id="td2" width="80%">Jusqu'à 30 ppm en couleur et en monochrome (magicolor® 5650EN)<br/>Jusqu'à 35 ppm en couleur et en monochrome (magicolor® 5670EN)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%m">Résolution</td>
+                    <td id="td1" width="80%">PhotoART-9600™ (600 x 600 dpi x 4-bit)m</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Temps de préchauffage</td>
+                    <td id="td2" width="80%">47 secondes ou moins</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse de sortie de la 1ère page</td>
+                    <td id="td1" width="80%">14 secondes en couleur & monochrome</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel</td>
+                    <td id="td2" width="80%">120 000 pages par mois</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">Bac papier multiformat 100 feuilles Bac de 500 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Bac papier optionnel</td>
+                    <td id="td2" width="80%">Bac papier de 500 feuilles (max. 2) Unité recto-verso automatique</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Capacité papier maximum</td>
+                    <td id="td1" width="80%">1 600 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie papier standard</td>
+                    <td id="td2" width="80%">Bac de 250 feuilles (face vers le bas)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Sortie papier optionnelle</td>
+                    <td id="td1" width="80%">Unité de finition à 2 bacs (600 feuilles, disque dur requis)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Formats acceptés</td>
+                    <td id="td2" width="80%">   Formats acceptés (bac papier multiformat) : A4, B5, B5 (ISO), A5, A6, B6, photo<br/>(100 * 150 mm), Legal, Letter, G-Letter, Statement, Executive, Folio, SP folio, UK <br/>Quarto, Foolscap, G-Legal, 16K, Kai 16, Kai 32, Japanese Postcard, Double <br/>Postcard, format personnalisé (92~216 * 148~1200 mm) </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type de processeur</td>
+                    <td id="td1" width="80%">Freescale PowerPC 7448, 733 MHz (magicolor® 5550), 867 MHz (magicolor® 5570)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulations</td>
+                    <td id="td2" width="80%">PostScript® 3™, PCL® 6 (XL 3.0), PCL® 5e/c ; Impression directe : PDF<br/>(version 1.6), JPEG, TIFF (carte HDD ou CompactFlash requise)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Disque Dur IDE interne</td>
+                    <td id="td1" width="80%">En option<br/>mc5670EN-dth / mc5670EN-dthf : standard</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emplacement pour la carte CompactFlash</td>
+                    <td id="td2" width="80%">En standard</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Mémoire</td>
+                    <td id="td1" width="80%">256 Mo (1 024 Mo max.)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Systèmes d'exploitation supportés</td>
+                    <td id="td2" width="80%">Windows® : 2000, 2003,XP, XP64, Vista 32/64 / Macintosh® : OS X (10.2, 10.3, 10.4,10.5) / Linux® : RedHat 9.0, SuSe 8.2 / Netware® : 4/5/6</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Interface standard</td>
+                    <td id="td1" width="80%">Ethernet 10Base-T / 100Base-TX / 1000Base-T (avec prise en charge TCP/IP,<br/> EtherTalk®, IPX/SPX, NetBEUI, UDP, NetBIOS, IPP1.1, SNMP, HTTP, HTTPS).<br/> Parallèle IEEE 1284 bidirectionnelle et USB 2.0 (haute vitesse) Hôte USB<br/> (PictBridge 1.0 et pilote d'impression USB)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Simulations couleur</td>
+                    <td id="td2" width="80%">SWOP, commercial press, Eurocolor, DIC, TOYO, nuancier PANTONE® , profils de périphériques ICC</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Autres</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions (W x D x H)</td>
+                    <td id="td1" width="80%">(P) 526 mm x (L) 420 mm x (H) 420 mm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids</td>
+                    <td id="td2" width="80%">33,4 kg (moteur sans consommables),<br/>44 kg (dans son emballage)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Garantie</td>
+                    <td id="td1" width="80%">Garantie 1 an sur site (Union Européenne, loi locale applicable)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>

@@ -1,0 +1,435 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Laser couleur compacte</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>L'heure est venue d'accroître la performance professionnelle une bonne fois pour toutes. KONICA MINOLTA présente la magicolor 5430DL, une imprimante révolutionnaire qui vous aide à améliorer votre activité et votre performance. La magicolor 5430DL représente une nouvelle référence en matière d'impression pour les groupes de travail de petite et moyenne tailles. Comment ? C'est très simple. Il s'agit de la première imprimante laser réunissant l'impression couleur et monochrome sur une même machine et pour le prix d'une monochrome.<br /></p>
+<br/>
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Konica Minolta Imprimante Magicolor 5430DL - Couleur Laser - 20 ppm mono - 20 ppm Couleur - PC, Mac</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Autres</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Méthode d'impression</td>
+                    <td id="td1" width="80%">Laser électrophotographique</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d'impression</td>
+                    <td id="td2" width="80%">20 pages couleur/monochromes par minute</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">2400 x 600 dpi<br/>1200 x 600 dpi<br/>600 x 600 dpi</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse de sortie de la 1ère page</td>
+                    <td id="td2" width="80%">14 secondes en couleur/monochrome</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Volume mensuel</td>
+                    <td id="td1" width="80%">60 000 pages par mois</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">Bac papier de 250 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Bac papier optionnel</td>
+                    <td id="td2" width="80%">1.250 feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Sortie papier standard</td>
+                    <td id="td1" width="80%">Bac de 250 feuilles, face vers le bas</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Formats acceptés</td>
+                    <td id="td2" width="80%">Bac multiformat (250 feuilles) : A4, A5, B5, Letter,<br/>Legal, J-Postcard, enveloppe, format personnalisé (92 à 216 mm x 148 à 297 mm)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Types de supports acceptés</td>
+                    <td id="td1" width="80%">Papier ordinaire (60-90 g/m²), support épais 1 (91-150 g/m²),<br/>support épais 2 (151-210 g/m²), papier recyclé (60-90 gm2),<br/>transparents, papier à en-tête, enveloppes, étiquettes,<br/>carte postale, papier brillant</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Surface d'impression</td>
+                    <td id="td2" width="80%">Marge de 4 mm sur tous les côtés,<br/>surface d'impression max. : 207,9 x 347,6 mm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type de processeur</td>
+                    <td id="td1" width="80%">ARM9 926EJ-S, 200 MHz</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulations</td>
+                    <td id="td2" width="80%">PageScope Raster Language</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Support couleur</td>
+                    <td id="td1" width="80%">Contrôle automatique amélioré de la densité<br/>d'image (eAIDC), correspondance automatique<br/>des couleurs ICC, profils de périphériques ICC</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Interface</td>
+                    <td id="td2" width="80%">USB 2.0 haute vitesse compatible Microsoft "Plug and Play"<br/>Fonctionnement simultané des interfaces : Toutes les interfaces<br/>reçoivent des données en même temps<br/>Interfaces standard : Ethernet (10BaseT/100BaseTX) pour TCP/IP,<br/>DHCP, BOOTP, HTTP, IPP (ver 1.1), SNMP (ver 1.0), SLP,<br/> Rendezvous, Raw port (9100</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Mémoire</td>
+                    <td id="td1" width="80%">64 Mo RAM (max 576 Mo)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Systèmes d'exploitation supportés</td>
+                    <td id="td2" width="80%">Windows 98 SE / ME / NT4 / 2000 / XP / Server 2003<br/>Mac OS X (10.2 ou suivant)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Polices standard</td>
+                    <td id="td1" width="80%">Une police résidente pour la configuration de Windows,<br/>toutes les autres polices étant sur l'hôte.</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Type</td>
+                    <td id="td2" width="80%">Imprimante laser avec contrôleur interne</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions (W x D x H)</td>
+                    <td id="td1" width="80%">(P) 520 mm x (L) 420 mm x (H) 420 mm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids</td>
+                    <td id="td2" width="80%">Sans consommables : 30 kg<br/>Avec consommables : 42 kg<br/>Emballée : 43,8 kg</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Puissance requise</td>
+                    <td id="td1" width="80%">Modèle 220/240V : 220/240 VAC ±10%, 50/60 ±3% Hz</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Consommation électrique</td>
+                    <td id="td2" width="80%">Max. < 1250 W<br/>Veille < 170 W<br/>Mode économique < 43W<br/>Conformité Energy Star</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Consommables préinstallés</td>
+                    <td id="td1" width="80%">Imprimante livrée avec un kit de démarrage<br/>contenant une cartouche toner de chaque couleur (Cyan, Magenta, Jaune et Noir)<br/>permettant d'imprimer jusqu 'à 3 000 pages<br/>et un réceptacle de toner usagé (jusqu'à 6 000 pages) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Remplacement des consommables</td>
+                    <td id="td2" width="80%">Capacité des consommables : Cyan, Magenta, Jaune et Noir (jusqu'à 6 000 pages)<br/>et réceptacle de toner usagé (jusqu'à 6 000 pages).</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>   
+    <div id="contentTable5" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Autres</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Température en fonctionnement</td>
+                    <td id="td1" width="80%">En fonctionnement : 10° à 35°C<br/>A l'arrêt : 0° à 35°</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Humidité</td>
+                    <td id="td2" width="80%">En fonctionnement : 15% à 85% RH<br/>A l'arrêt : 10% à 85% RH</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore</td>
+                    <td id="td1" width="80%">Impression : <54dBA<br/>Veille : < 39dBA</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Normes</td>
+                    <td id="td2" width="80%">UL, cUL, FCC-B, DOC, VCCI, CE Marking, C-Tick, CDRH</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Garantie</td>
+                    <td id="td1" width="80%">1 an de garantie sur site (en France métropolitaine)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>
