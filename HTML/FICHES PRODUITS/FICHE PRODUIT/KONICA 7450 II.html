@@ -1,0 +1,385 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Laser couleur</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Le contrôleur de pointe Emperon, exclusivité de Konica Minolta, permet à la magicolor 7450 de traiter les documents à une vitesse incroyable. La technologie Emperon garantit une efficacité très supérieure dans les environnements de réseau les plus exigeants, en éliminant quasiment toute attente entre l'envoi de la demande d'impression depuis l'ordinateur et la sortie du document.<br /></p>
+<br/>
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Konica Minolta Imprimante laser Magicolor 7450 II - Couleur Laser - 25 ppm mono - 25 ppm Couleur - Parallèle, USB, PictBridge - PC, Mac</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Autres</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Méthode d'impression</td>
+                    <td id="td1" width="80%">Imprimante laser couleur A3 à technologie monopasse</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d'impression</td>
+                    <td id="td2" width="80%">Jusqu'à 25 ppm en couleur et en monochrome (A4) <br/>Jusqu'à 13 ppm en couleur et en monochrome (A3) </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">PhotoART-9600™ (600 x 600 dpi x 4-bit)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse de sortie de la 1ère page</td>
+                    <td id="td2" width="80%">9,5 secondes en monochrome, 11,5 secondes en couleur</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Volume mensuel</td>
+                    <td id="td1" width="80%">Jusqu'à 120 000 pages par mois</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">Bac papier multiformat 100 feuilles, <br/>Bac de 250 feuilles</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Bac papier optionnel</td>
+                    <td id="td2" width="80%">Bac papier de 500 feuilles (3 max.)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Sortie papier standard</td>
+                    <td id="td1" width="80%">Bac de 350 feuilles (face vers le bas)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Formats acceptés</td>
+                    <td id="td2" width="80%">A3, A3 Wide (311x457), A4, B5, B5(ISO), A5, A6, B6, B4, D8K, Ledger, Legal, Letter, G-Letter, Statement, Executive, Folio, UK Quatro, Foolscap, G-Legal, 4” x 6”, 12” x 18”, format personnalisé (90 à 311 x 140 à 1200 mm)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Recto verso</td>
+                    <td id="td1" width="80%">En option</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type de processeur</td>
+                    <td id="td1" width="80%">Freescale PowerPC, 7447A (733 MHz)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">256 Mo (1024 Mo max.)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Système d'exploitation</td>
+                    <td id="td1" width="80%">Windows® 2000, 2003, XP, XP64, Vista 32/64 / Macintosh® OS X (10.2, 10.3, 10.4, 10.5) / Linux Redhat v9.0, SuSE v8.2 / Netware  4, 5, 6 ou suivant</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulations</td>
+                    <td id="td2" width="80%">PostScript 3 (3016), PCL 6 (XL3.0) PCL 5e/c</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Emplacement pour la carte CompactFlash</td>
+                    <td id="td1" width="80%">Standard (importation de polices de caractères et stockage), Impression directe PDF, JPEG, TIFF</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Interface standard</td>
+                    <td id="td2" width="80%">10-/100-/1000-Base-T Ethernet compatible TCP/IP, EtherTalk, IPX/SPX, NetBIOS, IPP 1.1, UDP, SNMP, HTTP, HTTPS (uniquement pour PS Web Connection), USB 2.0 (haute vitesse) et port hôte PictBridge (appareil photo numérique via port hôte USB)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Polices standard</td>
+                    <td id="td1" width="80%">Une police résidente pour la configuration de Windows, toutes les autres polices étant sur l'hôte.</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Dimensions (LxlxH, mm)</td>
+                    <td id="td2" width="80%">648 mm x 606 mm x 477 mm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Poids</td>
+                    <td id="td1" width="80%">51 kg (sans consommables),<br/>78 kg (dans son emballage)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Autres</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Garantie</td>
+                    <td id="td1" width="80%">Garantie 1 an sur site (Union Européenne, loi locale applicable)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>

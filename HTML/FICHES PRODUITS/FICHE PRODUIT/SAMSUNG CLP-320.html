@@ -1,0 +1,420 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante monofonction couleur</li>
+    <li id="liproduit">L’impression couleur du bout des doigts</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Avec son bouton d'impression directe de l'écran et ses performances en impression, l'imprimante laser couleur CLP-320 est le compagnon bureautique idéal. Il est courant de voir une imprimante posée sur un bureau. Cependant la CLP-320W peut vous offrir une qualité d’impression exceptionnelle avec sa résolution 2400 x 600 dpi. Ajoutez à cela le bouton d’impression d’écran qui vous permet d'imprimer rapidement ce qui se trouve sur votre écran et vous obtenez le compagnon bureautique idéal!<br /></p>
+<br/>
+<h3 id="h3produit">Un design unique pour une compacité hors norme</h3>
+<p>L'imprimante laser couleur CLP-320W est remarquable par sa compacité. Avec des dimensions de rêve, 388 x 313 x 243 mm, vous pouvez la poser où bon vous semble sur votre bureau. Sans oublier la touche d’impression directe de l’écran et le bouton marche-arrêt installés en façade pour un accès facile et rapide. Ajoutez à cela un design noir et gris laqué et vous révolutionnez votre espace de travail.</p>
+<br />
+<h3 id="h3produit">Capturez et imprimez ce que vous voyez!</h3>
+<p>Le logiciel AnyWeb Print de Samsung vous permet de sélectionner et de glisser-déposer des contenus issus de différentes pages Web ou autre pour les placer dans un nouveau document vierge, sans devoir les redimensionner ou les éditer de quelque manière que ce soit. AnyWeb Print est un moyen facile de rassembler des informations. Vous pouvez ensuite sauver les documents que vous avez créés en format tiff ou pdf. Vous pouvez également imprimer ces documents à l'aide de la touche impression capture d'écran ou du menu d'impression habituel.</p>
+<br />
+<h3 id="h3produit">Transcendez vos impressions en couleur</h3>
+<p>La série CLP-320 possède une résolution d'impression de 2400 x 600 dpi sublimant ainsi vos travaux couleur. Grâce à son savoir faire en matière d'impression, Samsung a également fabriqué de nouveaux toners améliorant la qualité de vos sorties couleur.</p>
+<br />
+<h3 id="h3produit">Silence, vous travaillez !</h3>
+<p>En plus de sa petite taille, la CLP-320W est silencieuse. Moins de 50 décibels (ce qui équivaut à un niveau sonore inférieur à une conversation entre deux personnes). Vous pouvez ainsi imprimer discrètement sans perturber votre environnement.</p>
+<br />
+<h3 id="h3produit">Diminuez votre attente et non vos attentes!</h3>
+<p>La CLP-320 imprime à la vitesse de 16 ppm (pages par minute) en noir et 4 ppm en couleur. Le temps de sortie de première page est de 14 secondes en noir et de 26 secondes en couleur pour une résolution d'impression atteignant 2400 x 600 dpi.</p>
+<br />
+<h3 id="h3produit">Préservez l'environnement</h3>
+<p>Afin de vous aider à faire des économies sur votre consommation électrique, Samsung a doté la CLP-320 d'un bouton frontal de mise sous tension. Ceci vous permet d'éviter de laisser votre imprimante allumée et ainsi de réduire votre facture d'électricité tout en faisant un geste pour l'environnement</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Samsung - CLP-320 - Imprimante laser couleur- USB 2.0 - PC, Linux, Mac </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse A4 N&B</td>
+                    <td id="td1" width="80%">16 ppm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse A4 Couleur</td>
+                    <td id="td2" width="80%">4 ppm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression Noir et Blanc </td>
+                    <td id="td1" width="80%">14 secondes</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution</td>
+                    <td id="td2" width="80%">2400 x 600 dpi</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression couleur</td>
+                    <td id="td1" width="80%">26 secondes</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Recto Verso</td>
+                    <td id="td2" width="80%">Manuel</td>
+                </tr>
+                 <tr id="tr1">
+                    <td id="td1" width="30%">langage(s) d'impression </td>
+                    <td id="td1" width="80%">SPL-C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Entrée papier</td>
+                    <td id="td1" width="80%">130 feuilles </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie papier</td>
+                    <td id="td2" width="80%">80 feuilles </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type</td>
+                    <td id="td1" width="80%">A4, A5, A6, Letter, Legal, Executive, Folio, ISO B5, JIS B5, Transparent (Seulement monochrome), Glossy Photo 220 g/m², Enveloppe, Labels, Cartes, Recyclé </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité papier maximum </td>
+                    <td id="td2" width="80%">130 feuilles </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Format </td>
+                    <td id="td1" width="80%">76 x 127 ~ 216 x 356</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Processeur</td>
+                    <td id="td1" width="80%">360 MHz</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">32 Mo</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Comptabilité environnement</td>
+                    <td id="td1" width="80%">Windows 2000 / XP / 2003 / Vista / 2008, Windows 7 / 2008 R2, Mac OS X 10.3-10.6, Various Linux OS </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Connexion </td>
+                    <td id="td2" width="80%">USB 2</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore </td>
+                    <td id="td1" width="80%">Moins de 45 dBA (Couleur), Moins de 47 dBA (N&B) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel maximum</td>
+                    <td id="td2" width="80%">20.000 pages </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions ( L x P x H) </td>
+                    <td id="td1" width="80%">388 x 313 x 243 mm </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids </td>
+                    <td id="td2" width="80%">11 kg </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartouche noire </td>
+                    <td id="td1" width="80%">1500 pages (cartouche de démarrage de 1000 pages)</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Cartouches couleur (Cyan, Magenta, Jaune) </td>
+                    <td id="td2" width="80%">1000 pages (cartouche de démarrage de 700 pages)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Unité d'imagerie</td>
+                    <td id="td1" width="80%">CLT-R407: 24 000 pages noires (6000 pages couleur)</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Bouteille de toner usagé</td>
+                    <td id="td2" width="80%">CLT-W409: 10 000 pages noires (2500 pages couleur)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

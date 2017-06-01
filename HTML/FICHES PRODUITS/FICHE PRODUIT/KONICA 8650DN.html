@@ -1,0 +1,447 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Laser couleur</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>La Magicolor 8650DN est entièrement dédiée à la couleur. En plus de sa créativité, elle vous offre à la fois vitesse et professionnalisme. Cette imprimante A3+ hosr pair s'adresse à des entreprises de moyennes tailles et aux départements de créations qui ont besoin d'une solution couleur haut de gamme alliant une gestion papier extrèmement souple et un grand choix de solution de finition, avec la possibilité de surveiller de près les coûts.<br /></p>
+<br/>
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Konica Minolta Imprimante laser Magicolor 8650 - A4 : 35ppm couleur et N&B - A3 : 17ppm couleur et N&B - 600x600x5 bit photo Art Contone - Windows, Mac et Linux - Emulations XPS, PostScipt 3, PCL6c.</p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+<div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Autres</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Méthode d'impression</td>
+                    <td id="td1" width="80%">Imprimante laser A3+</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse d'impression</td>
+                    <td id="td2" width="80%">A4 : jusqu'à 35 ppm en couleur et monochrome / A3 : 17 ppm en couleur et monochrome</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Résolution</td>
+                    <td id="td1" width="80%">PhotoART-19200 (600 x 600 x 5-bit contone)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Temps de préchauffage</td>
+                    <td id="td2" width="80%">75 secondes</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse de sortie de la 1ère page</td>
+                    <td id="td1" width="80%">8,5 secondes en couleur, 5,9 secondes en monochrome</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel</td>
+                    <td id="td2" width="80%">jusqu'à 150 000 pages par mois</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Alimentation papier standard</td>
+                    <td id="td1" width="80%">2 x 500 feuilles, 150 feuilles via le bac papier multiformat</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Bac papier optionnel</td>
+                    <td id="td2" width="80%">bac papier de 500 feuilles, bac papier de 2 x 500 feuilles, bac papier de 2 500 feuilles, meuble pour imprimante, bac papier bannière</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Sortie papier standard</td>
+                    <td id="td1" width="80%">Bac de 250 feuilles (face vers le bas)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Formats acceptés</td>
+                    <td id="td2" width="80%">A3, A3 +, A4, B5, B5 (ISO), A5, A6, B6, B4, D8K, Ledger, Legal, Letter, G-Letter, Statement, Executive, Folio, UK Quarto, Foolscap, G-Legal, 4”x6”, 12”x18”, format personnalisé (90-311 * 140-1200 mm)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Grammage papier</td>
+                    <td id="td1" width="80%">64-256 g/m² depuis tous les bacs papier ; 64-271 g/m² depuis le plateau d'alimentation manuelle ; 64-256 g/m² en recto verso</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Tailles d'enveloppes acceptés</td>
+                    <td id="td2" width="80%">Com10, C5, C6, DL, Monarch</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Surface d'impression</td>
+                    <td id="td1" width="80%">4,2 mm des bords</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type de processeur</td>
+                    <td id="td1" width="80%">PowerPC® MC7447 @ 1 GHz, 64 BIT</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">1024 Mo</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Gestionnaire d'impression</td>
+                    <td id="td1" width="80%">PageScope™ NetCare, PageScope™ Web Connection, PageScope™ Network Setup, PageScope™ Peer to Peer Printing Tool, PageScope™ EMS plug-in, PageScope™ Web Jet Admin plug-in, PageScope™ Plug and Print, PageScope™ NDPS Gateway, Download Manager, Print Monitor, Status Monitor</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Emulations</td>
+                    <td id="td2" width="80%">Emulations XPS, PostScript 3, PCL6c (PCL 5c + XL3.0)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Disque Dur IDE interne</td>
+                    <td id="td1" width="80%">En option 60 Go</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Impression directe</td>
+                    <td id="td2" width="80%">PCL, PS, TIFF, JPEG, XPS, PDF (version 1.6) et PDF crypté</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Simulations couleur</td>
+                    <td id="td1" width="80%">SWOP, Commercial Press, Eurocolor, DIC, TOYO, Japan color, JMPA color, SNAP, tables de couleurs PANTONE®, profils de périphériques ICC</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Polices standard</td>
+                    <td id="td2" width="80%">137x PostScript 3 emulation Latin fonts, 80x PCL Latin fonts</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Interface standard</td>
+                    <td id="td1" width="80%">Ethernet 10Base-T / 100Base-TX / 1000Base-T (supports TCP/IP, IPX/SPX, NetBEUI, AppleTalk (EtherTalk), SMB, LPD, IPP1.1, SNMP, HTTP, IPv6) USB 2.0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Consommables préinstallés</td>
+                    <td id="td1" width="80%">Toner cyan, magenta, jaune jusqu'à 20 000 pages. Toner noir jusqu'à 26 000 pages. Tambour cyan, magenta, jaune jusqu'à 90 000 pages. Tambour noir jusqu'à 120 000 pages. Bac de réception de toner usagé jusqu'à 50 000 pages</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Remplacement des consommables</td>
+                    <td id="td2" width="80%">Toner cyan, magenta, jaune jusqu'à 20 000 pages. Toner noir jusqu'à 26 000 pages. Tambour cyan, magenta, jaune jusqu'à 90 000 pages. Tambour noir jusqu'à 120 000 pages. Bac de réception de toner usagé jusqu'à 50 000 pages</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable5" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Autres</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions (W x D x H)</td>
+                    <td id="td1" width="80%">643 mm x 708 mm x 637 mm</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Poids</td>
+                    <td id="td2" width="80%">89 kg avec consommables / 110 kg, emballée, prête à expédier</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Puissance requise</td>
+                    <td id="td1" width="80%">220 V~240 V (± 10%), 50/60 Hz (± 3 Hz)</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Consommation électrique</td>
+                    <td id="td2" width="80%">1 500 W ou moins, Consommation moyenne durant l'impression, en veille : 200 W ou moins</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Température en fonctionnement</td>
+                    <td id="td1" width="80%">10 °C ~30 °C (en fonctionnement)</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Humidité</td>
+                    <td id="td2" width="80%">15% to 85% RH (en fonctionnement)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore</td>
+                    <td id="td1" width="80%">67 Db ou moins (en fonctionnement), 43 dB ou moins (en veille)</td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Normes</td>
+                    <td id="td2" width="80%">137x PostScript 3 emulation Latin fonts, 80x PCL Latin fontsUL, cUL, FCC-B, DOC, VCCI, CE Marking, C-Tick, CDRH, WEEE, RoHS</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Garantie</td>
+                    <td id="td1" width="80%">Garantie de réparation 1 an sur site PROTECT.REPAIR (en France métropolitaine uniquement)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</div>
+</div>
