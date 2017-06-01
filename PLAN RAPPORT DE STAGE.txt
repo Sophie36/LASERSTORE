@@ -2,20 +2,14 @@ REMERCIEMENTS
 
 INTRO
 	Présentation étudiant
-	Contexte (2 entreprises)
-	Missions (informatique et réparation)
+	Contexte (1 entreprise)
+	Missions (informatique)
 	Présentation du plan du rapport
 
 1) Développement d'un site web marchand pour N&B.
-	Présentation de l'entreprise (organigramme employé & service affecté mission)
+	Présentation de l'entreprise (organigramme employés & service affecté mission)
 	Présentation de la mission (antécédents, la demande interne, matériel mis à dispo & logiciel)
 	Développement de la solution (méthode utilisée, problème rencontrés, qui valide)
-	Bilan
-	
-2) Maintenance informatique chez Flotec
-	Présentation de l'entreprise (organigramme employé & service affecté mission)
-	Présentation de la mission (démarche, la demande du client, matériel mis à dispo & logiciel)
-	Comparaison méthode N&B et Flotec
 	Bilan
 	
 Conclusion
