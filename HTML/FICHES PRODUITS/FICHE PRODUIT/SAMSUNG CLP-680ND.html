@@ -1,0 +1,415 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante laser couleur</li>
+    <li id="liproduit">L’impression couleur du bout des doigts</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>Les entreprises doivent savoir qu'il est aujourd'hui possible de produire des impressions de qualité élevée de manière rapide et économique. L'imprimante CLP-680ND permet d'obtenir des couleurs brillantes de qualité, mais aussi une vitesse d'impression supérieure lors du traitement de volumes importants. Le biprocesseur véloce, la prise en charge de la connectivité réseau Gigabit et la technologie de fusion instantanée offrent une vitesse accrue et un temps d'attente réduit. Ce qui la distingue toutefois sur le plan économique est son éventail de fonctions innovantes et économes, telles que l'optimisation du toner, la faible consommation d'énergie et les fonctionnalités respectueuses de l'environnement. Cette imprimante pour les groupes de travail de taille moyenne répond dès le départ aux besoins des utilisateurs soucieux de leurs porte-monnaie. <br /></p>
+<br/>
+<h3 id="h3produit">Une haute qualité couleur</h3>
+<p>La technologie ReCP de Samsung (Rendering Engine for Clean Page) offre une qualité d'image supérieure et une meilleure définition des caractères pour un résultat net et précis. Avec une résolution de 1200 x 1200 dpi, cette technologie d'image novatrice permet aux utilisateurs de créer des documents professionnels.</p>
+<br />
+<h3 id="h3produit">Des performances inégalées </h3>
+<p>La productivité de votre entreprise depend de la performance de votre imprimante. Avec une vitesse d'impression de 24 / 24 pages par minute et un temps de sortie de 1ère page de 17 secondes, la CLP-680ND ne vous laissera pas tomber.</p>
+<br />
+<p>* Des performances sans compromis<br/>
+Gagnez en productivité grâce au double processeur de 533 MHz qui offre une impression et une numérisation rapide.<br/>
+La mémoire de 512Mo (Max. 1Go) vous permet également d'imprimer rapidement et en grandes quantité.<br/>
+L'imprimante laser couleur CLP-680ND deviendra très vite un outil indispensable pour votre bureau.</p>
+<br />
+<h3 id="h3produit">Une gestion papier simplifiée</h3>
+<p>Il vous est désormais possible d'imprimer et copier de grands volumes, avec l'imprimante laser couleur CLP-680ND. Cette imprimante dispose d'un bac papier pouvant contenir jusqu'à 250 feuilles de 220 g/m². Augmentez la capacité papier grâce au second bac papier (en option) de 520 feuilles en standard et de 820 feuilles maximum.<br/>
+Ne perdez plus de temps à changer de bac, la CLP-680ND dispose de 3 types de support.</p>
+<br />
+<h3 id="h3produit">Gardez le contrôle de vos documents avec l'impression sécurisée de Samsung</h3>
+<p>Gagnez en productivité et obtenez des résultats incroyables en moins de temps grâce aux fonctionnalités de la CLP-680ND. </p>
+<br />
+<p>* Impression sécurisée<br/>
+Des documents importants peuvent facilement se retrouver entre de mauvaises mains, en particulier lorsque les imprimantes sont utilisées par plusieurs personnes. La fonction d’impression sécurisée vous permet de conserver vos documents à l’abri des regards indiscrets grâce à l’utilisation d’un code pin dont seule la saisie libère l’impression de vos fichiers. Il vous suffit de trouver votre fichier sur l’interface utilisateur et d’autoriser l’impression en entrant le code pin. Vous disposez ainsi d’un moyen simple et efficace de garder le contrôle total sur les documents importants tout en évitant des impressions inutiles.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Imprimante Laser Samsung CLP-680ND - Couleur - 9600 x 600 dpi - Impression Papier Ordinaire - Bureau - Impression 25 ppm Mono/25 ppm Couleur - Bac d'Alimentation 300 Feuilles - Recto/Verso Automatique - LCD - Gigabit Ethernet - USB </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse (monochrome) </td>
+                    <td id="td1" width="80%">Jusqu'à 24 ppm en A4 (25 ppm au format Letter) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse (couleur) </td>
+                    <td id="td2" width="80%">Jusqu'à 24 ppm en A4 (25 ppm au format Letter) </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression Noir et Blanc </td>
+                    <td id="td1" width="80%">Moins de 17 sec (A partir du mode Prêt) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution</td>
+                    <td id="td2" width="80%">Jusqu'à 9600 x 600 dpi </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression couleur </td>
+                    <td id="td1" width="80%">Moins de 17 sec (A partir du mode Prêt) </td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Recto Verso</td>
+                    <td id="td2" width="80%">fonction intégrée </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Langage(s) d'impression </td>
+                    <td id="td1" width="80%">Emulation: PCL5Ce / PCL6C / PS3 / PDF V1.7 / SPL-C (Samsung Printer Language Color) </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Entrée papier </td>
+                    <td id="td1" width="80%">250 feuilles / 50 feuilles (Max 820 feuilles) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité Enveloppe</td>
+                    <td id="td2" width="80%">20 feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type </td>
+                    <td id="td1" width="80%">Plain Paper / Thin Paper / Thick Paper / Cardstock / Thicker Paper / Hole Punched / Transparency / Pre-Printed / LetterHead / Recycled / Archive / Bond / Label / Envelope / Cotton / Colored / Glossy </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Format </td>
+                    <td id="td2" width="80%">A4 / Letter / Legal / Oficio / Folio / JIS B5 / ISO B5 / Executive / A5 / Statement / A6 / Index Card Stock / Postcard / Envelope Monarch / Envelope No-10 / Envelope DL / Envelope C5 / Envelope C6 / Envelope No 9 / Custom [76 x 127 mm (3" x 5") ~ 216 x 356 mm (8.5" x 14")] </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Généralités</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Processeur</td>
+                    <td id="td1" width="80%">double processeur 533 MHz ARM11 </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">256 Mo (Max 512 Mo) </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité environnement </td>
+                    <td id="td1" width="80%">Window 2003 / 2008 / XP / Vista / 7 / 2003 Server / 2008 Server / 2008 Server R2 / Mac OS X 10.4 - 10.7 / Various Linux, UNIX OS Compatible </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Connexion  </td>
+                    <td id="td2" width="80%">USB haute vitesse 2.0, USB Host, Ethernet 10 / 100 / 1000 Base-TX </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore </td>
+                    <td id="td1" width="80%">Moins de 52 dBA (Impression) / Moins de 32 dBA (Arrêt) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel maximum</td>
+                    <td id="td2" width="80%">60,000 pages</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions ( L x P x H) </td>
+                    <td id="td1" width="80%">420 x 452.5 x 311.3 mm (16.54" x 17.81" x 12.26") </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids </td>
+                    <td id="td2" width="80%">20.15 kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartouche noire </td>
+                    <td id="td1" width="80%">Standard 2000 pages (livré avec un toner de démarrage de 2000 pages) / Haute capacité: 6000 Pages Taux de remplissage certifiés selon la norme ISO / IEC 19798 </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Cartouches couleur (Cyan, Magenta, Jaune) </td>
+                    <td id="td2" width="80%">Standard 1500 pages (livré avec un toner de démarrage de 1500 pages) / Haute capacité: 3500 Pages Taux de remplissage certifiés selon la norme ISO / IEC 19798</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Bouteille de toner usagé</td>
+                    <td id="td1" width="80%">14 000 pages (Mono) / 3500 pages (Couleur) </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

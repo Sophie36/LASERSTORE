@@ -1,0 +1,418 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante laser couleur</li>
+    <li id="liproduit">L’impression couleur du bout des doigts</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>À l'ère de l'information, tout est question de communication sortant de l'ordinaire: rapide, ponctuelle et offrant une incroyable qualité. Désormais, grâce à la CLP-415N, chaque entreprise peut stimuler ses performances et profiter d'un nouveau mode de communication. Créez des documents couleur à l'aspect professionnel à des vitesses impressionnantes grâce à cet appareil convivial et économique pour petit groupe de travail.<br /></p>
+<br/>
+<p>Quels que soient votre emploi du temps ou la taille de votre équipe, vous pouvez compter sur l'imprimante CLP-415N pour fournir à tout moment des impressions couleur de qualité professionnelle. Contentez-vous du meilleur.<br /></p>
+<br/>
+<p>Stimulez la qualité générale et le côté éclatant de vos impressions grâce à notre technologie unique ReCP (Rendering Engine for Clean Pages). Elle permet d'ajouter automatiquement des points le long des bords des images et des caractères afin qu'ils semblent plus nets et plus clairs. En outre, ces zones blanches entre les zones colorées, que l'on retrouve fréquemment avec d'autres appareils, sont éliminées. Par conséquent, il ne reste plus que de magnifiques impressions en couleur que vous apprécierez avec votre équipe. <br /></p>
+<br/>
+<h3 id="h3produit">Toner polymérisé nouvelle génération</h3>
+<p>La nouvelle génération de toner Samsung contient des particules plus fines et plus uniformes pour des tracés plus nets et plus précis. De plus, avec sa formule à la cire, il vous garantit durabilité et rendu glossy.</p>
+<br />
+<h3 id="h3produit">Des performances inégalées</h3>
+<p>La productivité de votre entreprise depend de la performance de votre imprimante. Avec une vitesse d'impression de 18 / 18 pages par minute et un temps de sortie de 1ère page de 16 secondes, la CLP-415N ne vous laissera pas tomber.</p>
+<br />
+<p>* Des performances sans compromis<br/>
+Gagnez en productivité grâce au double processeur de 533 MHz qui offre une impression et une numérisation rapide.</p>
+<br />
+<p>La mémoire de 256 Mo vous permet également d'imprimer rapidement et en grandes quantité.
+L'imprimante laser couleur CLP-415N deviendra très vite un outil indispensable pour votre bureau.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Imprimante Laser Samsung CLP-415N - Couleur - 9600 x 600 dpi - Impression Papier Ordinaire - Bureau - Impression 19 ppm Mono/19 ppm Couleur - Bac d'Alimentation 251 Feuilles - Recto/Verso Manuel - LCD - Gigabit Ethernet - USB </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse A4 N&B</td>
+                    <td id="td1" width="80%">Jusqu'à 18 ppm en A4 (19 ppm au format Letter)</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse A4 Couleur</td>
+                    <td id="td2" width="80%">Jusqu'à 18 ppm en A4 (19 ppm au format Letter)</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression Noir et Blanc </td>
+                    <td id="td1" width="80%">Moins de 16 secondes (A partir du mode Prêt) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution</td>
+                    <td id="td2" width="80%">9600 x 600 dpi </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ère impression couleur</td>
+                    <td id="td1" width="80%">Moins de 16 secondes (A partir du mode Prêt) </td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Recto Verso</td>
+                    <td id="td2" width="80%">Manuel</td>
+                </tr>
+                 <tr id="tr1">
+                    <td id="td1" width="30%">Langage(s) d'impression </td>
+                    <td id="td1" width="80%">SPL (Samsung Printer Langauge), PCL5Ce, PCL6C, PS3, PDF V1.7 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Entrée papier</td>
+                    <td id="td1" width="80%">250 feuilles </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie papier</td>
+                    <td id="td2" width="80%">100 feuilles </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type</td>
+                    <td id="td1" width="80%">A4 / A5 / A6 / Letter / Legal / Oficio / Folio / JIS B5 / ISO B5 / Executive / Statement / Index Card Stock / Postcard / Envelope (Monarch, No-10, DL, C5, C6, No 9) Custom 76 x 127 mm (3.0" x 5.0") ~ 216 x 356 mm (8.5" x 14") </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité enveloppe</td>
+                    <td id="td2" width="80%">20 feuilles </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Format </td>
+                    <td id="td1" width="80%">Plain / Thin / Thick / Cardstock / Hole Punched / Transparency / PrePrinted / LetterHead / Recycled / Archive / Bond / Label / Envelope / Cotton / Colored / Glossy / Thicker Paper </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Général</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Processeur</td>
+                    <td id="td1" width="80%">Double processeur 533 MHz </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">256 Mo </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Comptabilité environnement</td>
+                    <td id="td1" width="80%">Window XP (32 / 64 bit) / 2003 Server (32 / 64 bit) / Vista (32 / 64 bit) / 2008 Server (32 / 64 bit) / 7 (32 / 64 bit) / 2008 Server R2Mac OS X 10.4 - 10.7 / Various Linux, Unix OS Compatible </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Connexion </td>
+                    <td id="td2" width="80%">Haute vitesse USB 2.0 / Ethernet 10 / 100 / 1000 Base Tx </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore </td>
+                    <td id="td1" width="80%">Moins de 45 dBA (Couleur), Moins de 47 dBA (N&B) </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel maximum</td>
+                    <td id="td2" width="80%">40 000 pages </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions ( L x P x H) </td>
+                    <td id="td1" width="80%">420 x 426 x 264 mm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids </td>
+                    <td id="td2" width="80%">16.62 kg</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartouche noire </td>
+                    <td id="td1" width="80%">Standard 2500 pages (livré avec un toner de démarrage de 1000 pages) Taux de remplissage certifiés selon la norme ISO / IEC 19798 </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Cartouches couleur (Cyan, Magenta, Jaune) </td>
+                    <td id="td2" width="80%">Standard 1800 pages (livré avec un toner de démarrage de 700 pages) Taux de remplissage certifiés selon la norme ISO / IEC 19798 </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Convoyeur</td>
+                    <td id="td1" width="80%">Jusqu'à 100 000 pages </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Bac à toner usagé</td>
+                    <td id="td2" width="80%">Approx. 14 000 pages (Mono), 3500 pages (Couleur) </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>

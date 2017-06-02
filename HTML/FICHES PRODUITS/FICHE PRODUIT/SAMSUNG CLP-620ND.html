@@ -1,0 +1,443 @@
+<meta charset="utf-8" />              <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+ #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style> <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caract&eacute;ristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante laser couleur</li>
+    <li id="liproduit">L’impression couleur du bout des doigts</li>
+    <br/>
+</ul>
+<br />
+<h2 id="h2produit"> Pr&eacute;sentation </h2>
+<p>L'importance que SAMSUNG accorde à une impression couleur de grande qualité et à la pointe de la technologie a conduit au développement de cette gamme d'imprimantes compactes et durables. Si votre entreprise nécessite des performances élevées pour un coût modéré, la CLP-620ND de SAMSUNG représente le choix idéal. La CLP-620ND de SAMSUNG offre une impression couleur exceptionnelle tout en minimisant les coûts d'exploitation.<br /></p>
+<br/>
+<h3 id="h3produit">Vitesse élevée</h3>
+<p>Les utilisateurs profitent d'une imprimante à grande vitesse qui offre une impression haute résolution.
+La CLP-620ND de SAMSUNG offre une vitesse d'impression de 20 ppm en couleur et en monochrome.
+Vous pouvez enfin disposer de vos impressions couleur rapidement!</p>
+<br />
+<h3 id="h3produit">Caractéristiques techniques améliorées</h3>
+<p>Avec une processeur de 360 MHz et une mémoire généreuse de 256 MB, la CLP-620ND de SAMSUNG fait de l'impression, du stockage et de votre flux domentaire, un jeu d'enfant.<br/>Les fonctionnalités additionnelles et la puissance de traitement la rendent parfaite même dans les environnements de travail les plus exigeants.</p>
+<br />
+<h3 id="h3produit">SAMSUNG Easy Colour Manager</h3>
+<p>L'Easy Colour Manager permet aux utilisateurs d'ajuster facilement la balance des couleurs, ainsi que la luminosité, le contraste et la saturation de toutes les images affichées sur votre écran. Cela peut se révéler particulièrement utile si votre entreprise a une marque avec des spécificités propres.</p>
+<br />
+<h3 id="h3produit">Technologie SAMSUNG de calibration en temps réel</h3>
+<p>Cela dit, si vous avez des documents importants qui requièrent une attention particulière, vous pouvez également choisir de définir manuellement la qualité de la couleur.</p>
+<br />
+<h3 id="h3produit">Haute résolution</h3>
+<p>La CLP-620ND de SAMSUNG vous offre une qualité d'impression exceptionnelle grâce à une résolution de 9600 x 600 dpi et vous offre ainsi une qualité documentaire réellement professionnelle.</p>
+<br />
+<h3 id="h3produit">Gestion du toner</h3>
+<p>Le mode d'économie de toner vous permet de gérer et de limiter efficacement votre utilisation de toner pour plus de rentabilité. Utiliser moins toner sur chaque page peut allonger la durée de vie de votre cartouche et entraîner une réduction significative du coût par page et permet également de contribuer à l'environnement.</p>
+<br />
+<h3 id="h3produit">Impression recto verso</h3>
+<p>La CLP-620ND de SAMSUNG est dotée d'une fonction recto verso qui vous permet d'imprimer de façon efficace et économique. La fonction d'économie de toner vous garantit en outre que les cartouches durent plus longtemps.
+La qualité est la même et vous perdez moins de temps! </p>
+<br />
+<h3 id="h3produit">Mode économie d'énergie</h3>
+<p>La touche d'économie d'énergie aide à réduire la consommation de courant de 80% par rapport au mode Prêt. Et pour économiser encore plus d'énergie, l'appareil peut être configuré pour se mettre en mode économique à des moments précis. La CLP-620ND consomme 20% d'énergie en moins par rapport aux appareils classiques, ce qui la rend plus économique et plus rentable.</p>
+<br />
+<h3 id="h3produit">Blue Compass Navigation</h3>
+<p>Blue Compass Navigation, le système unique de SAMSUNG, est facile à apprivoiser et son utilisation est un jeu d'enfant. Vous êtes ainsi plus productif, plus rapidement. La fenêtre de navigation vous permet d'accéder instantanément à toutes les fonctions d'impression et à toutes les commandes.<br/>
+Des touches et des menus simples et intuitifs vous permettent d'éviter de perdre du temps à apprendre à utiliser votre appareil et à résoudre des problèmes. Les écrans de l'interface utilisateur sont conviviaux et vous permettent de réaliser vos opérations rapidement et simplement. En outre, vous avez accès à toutes les informations nécessaires, telles que l'état des tâches en cours, le niveau de toner, les éventuels bourrages de papier, le papier manquant et les avertissements en cas de capot ouvert.</p>
+<br />
+<h3 id="h3produit">Intégration réseau facile</h3>
+<p>La CLP-620ND de SAMSUNG est prête à être intégrée à votre réseau dès que vous la sortez de son carton. Elle est en outre compatible avec les nouveaux protocoles Internet (IPv6), pour que vous puissiez également l'intégrer à vos futurs réseaux.</p>
+<br />
+<h3 id="h3produit">Gestion du papier</h3>
+<p>Vous pouvez stocker 250 feuilles de papier en même temps et profiter du bac polyvalent d'une capacité de 100 feuilles. Cela vous permet de passer moins de temps à remettre du papier et d'avoir toujours le bon format sous la main (de l'A6 au legal).<br/>
+Vous pouvez également rajouter un bac papier suppélemnatire de 250 feuilles afin d'obtenir une capacité papier maximum de 500 feuilles, en plus du bac papier polyvalent de 100 feuilles.</p>
+<br />
+<h3 id="h3produit">Consommables</h3>
+<p>La CLP-620ND de SAMSUNG offre également un grand choix de consommables correspondants à votre budget. Les cartouches haute capapcité sont idéales en cas de besoins importants, puisqu'elles durent longtemps et vous offrent un coût par page plus faible. A l'inverse, les cartouches plus petites vous permettent d'atteindre un coût initial plus bas.<br/>
+CLT-K5082S: Toner noir: 2500 pages,<br/>
+CLT-M5082S: Toner magenta: 2000 pages,<br/>
+CLT-Y5082S: Toner jaune: 2000 pages,<br/>
+CLT-C5082S: Toner cyan: 2000 pages,<br/>
+CLT-K5082L: Toner noir haute capacité: 5000 pages,<br/>
+CLT-M5082L: Toner magenta haute capacité: 4000 pages,<br/>
+CLT-Y5082L: Toner jaune haute capacité: 4000 pages,<br/>
+CLT-C5082L: Toner cyan haute capacité: 4000 pages.</p>
+<br />
+<h3 id="h3produit">Vue d'ensemble</h3>
+<p>Samsung CLP-620ND - Imprimante laser couleur Recto-verso - USB 2.0, Ethernet 10 / 100 Base TX - PC, Linux, Mac </p>
+<br />
+<h2 id="h2produit"> Caract&eacute;ristiques techniques </h2>
+<br />
+<div id="tabs-table">
+<div id="tabs">
+<div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Impression</span></div>
+<div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Gestion du papier</span></div>
+<br />
+<div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Général</span></div>
+<div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Consommables</span></div>
+</div>
+<div id="table">
+    <div id="contentTable1" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Impression</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Vitesse A4 N&B</td>
+                    <td id="td1" width="80%">20ppm</td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Vitesse A4 Couleur</td>
+                    <td id="td2" width="80%">20ppm</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Temps de sortie 1ere impression</td>
+                    <td id="td1" width="80%">25 secondes </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Résolution</td>
+                    <td id="td2" width="80%">9600 x 600 dpi </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Langage(s) d'impression </td>
+                    <td id="td1" width="80%">PCL6, SPL-C (langage d'impression SAMSUNG) </td>
+                </tr>
+                 <tr id="tr2">
+                    <td id="td2" width="30%">Recto Verso</td>
+                    <td id="td2" width="80%">Automatique </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
+    <div id="contentTable2" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Gestion de Papier</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Entrée papier </td>
+                    <td id="td1" width="80%">250 feuilles, bypass 100 feuilles </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Sortie papier </td>
+                    <td id="td2" width="80%">250 feuilles</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Type </td>
+                    <td id="td1" width="80%">Papier ordinaire, épais, plus épais, très épais, fin, coton, archives, bond, cartonné, pré-imprimé, coloré, recyclé, étiquettes, enveloppes, transparents, brillant 111 - 130, brillant 131 - 175, brillant 176 - 220 </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Capacité papier maximum </td>
+                    <td id="td2" width="80%">850 feuilles </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Format </td>
+                    <td id="td1" width="80%">98 x 148 - 216 x 356 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="contentTable3" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Généralités</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Processeur</td>
+                    <td id="td1" width="80%">Pentium® II 400 MHz </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Mémoire</td>
+                    <td id="td2" width="80%">256 / 512 Mo </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Compatibilité environnement</td>
+                    <td id="td1" width="80%">Windows 2000 / XP / 2003 / Vista (dont 64 bits) / Windows 7, Windows server 2008 R2; divers SE Linux dont Red Hat 8.0 ~ 9.0, Mandrake 9.2 ~ 10.1, SuSE 8.2 ~ 9.2 et Fedora Core 1 ~ 4; Mac OS X 10.3 ~ 10.6; Citrix Presentation Server, Windows Terminal Services </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Connexion </td>
+                    <td id="td2" width="80%">USB 2.0, Ethernet 10 / 100 Base TX </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Niveau sonore </td>
+                    <td id="td1" width="80%">51 dBA </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Volume mensuel maximum</td>
+                    <td id="td2" width="80%">65000 pages</td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Dimensions ( L x P x H) </td>
+                    <td id="td1" width="80%">441.5 x 431 x 425 </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Poids </td>
+                    <td id="td2" width="80%">31.5 </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+    <div id="contentTable4" class="mask_element">
+        <table id="tableauCarac">
+            <tbody>
+                <tr id="trth">
+                    <th id="th" width="30%">Consommables</th>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Cartouche noire </td>
+                    <td id="td1" width="80%">2500, 5000 pages </td>
+                </tr>
+                <tr id="tr2">
+                    <td id="td2" width="30%">Cartouches couleur (Cyan, Magenta, Jaune) </td>
+                    <td id="td2" width="80%">2000, 4000 pages </td>
+                </tr>
+                <tr id="tr1">
+                    <td id="td1" width="30%">Courroie de transfert </td>
+                    <td id="td1" width="80%">CLT-T508: 50 000 pages</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
