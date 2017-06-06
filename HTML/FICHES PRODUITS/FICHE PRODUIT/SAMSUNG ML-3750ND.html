@@ -1,0 +1,385 @@
+<meta charset="utf-8" />
+        
+    <style>
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style><script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+<h2 id="h2produit">Caractéristiques</h2>
+<ul id="ulproduit">
+    <li id="liproduit">Imprimante Noir et Blanc</li><br>
+    <li id="liproduit">Imprimante Recto verso</li><br>
+</ul><br><br><br><br>        
+<h2 id="h2produit"> Présentation </h2>
+<p>Adaptez le fonctionnement de votre bureau à vos besoins et profitez d'une impression économique d'excellente qualité. Avec la ML-3750ND, les cartouches à haut rendement vous permettent d'imprimer nombreux quantité des pages. Il devient ainsi aisé de gérer de grandes quantités de documents et de publications. Que vous ayez une petite ou une grande entreprise, l'imprimante Samsung ML-3750ND vous fournira des milliers de pages à un prix abordable. <br><br></p>
+
+<h3 id="h3produit"> Impression recto-verso</h3><p>Gagnez en efficacité avec l’impression recto-verso installée en standard sur la série ML-3750ND. Réalisez vos propres documents recto-verso en utilisant des options telles quel l’orientation portrait ou paysage. Celle-ci vous permettra en outre d’économiser du papier, ce qui facilite le stockage et la portabilité.</p><br>
+
+<h3 id="h3produit">Service d’administration web SyncThru™</h3><p>SyncThru™ est un outil de gestion sur le Web permettant de configurer les imprimantes, de contrôler le statut des périphériques, de réaliser des diagnostics à distance, de recevoir des alertes en cas de problème potentiel et de modifier les paramètres sans quitter votre poste de travail.</p><br>
+                            
+<h2 id="h2produit"> Caractéristiques techniques </h2>
+<div id="tabs-table" >
+    <div id="tabs">
+        <div id="ongletselect" onclick="toggle_div('contentTable1'); 
+        newid(this)"><span>Général</span></div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); 
+        newid(this)"><span>Impression</span></div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); 
+        newid(this)"><span>Gestion du papier</span></div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); 
+        newid(this)"><span>Autres</span></div>
+    </div>
+    <div id="table">
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%"> Général </th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Processeur </td>
+                        <td id="td1" width="80%">Samsung 533 MHz </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Mémoire</td>
+                        <td id="td2" width="80%">128 Mo (Max. 512 Mo) </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Compatibilité environnement </td>
+                        <td id="td1" width="80%">2000 / XP (32 / 64 bits) / Vista (32 / 64 bits) / 2003 Server (32 / 64 bits) / 2008 Server (32 / 64 bits) / 7 (32 / 64 bits) / 2008 Server R2 (64 bits) / Various Linux OS: RedHat Enterprise Linux WS 4, 5 (32 / 64 bit) Fedora 4, 5, 6, 7, 8, 9, 10, 11, 12 (32 / 64 bit) SuSE Linux 10.0, 10.1 (32 bit) OpenSuSE 10.2, 10.3, 11.0, 11.1, 11.2 (32 / 64 bit) Mandriva 2005, 2006, 2007, 2008, 2009, 2009.1 (32 / 64 bit) Ubuntu 5.04, 5.10, 6.06, 6.10, 7.04, 7.10, 8.04, 8.10, 9.04, 9.10 (32 / 64 bit) SuSE Linux Enterprise Desktop 10, 11 (32 / 64 bit) Debian 4.0, 5.0 (32 / 64 bit) Mac OS: 10.3 ~ 10.6 UNIX OS: Sun Solaris 9, 10 (x86, SPARC) HP-UX 11.0, 11i v1, 11i v2, 11i v3 (PA-RISC, Itanium) IBM AIX 5.1, 5.2, 5.3, 5.4 </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Interface</td>
+                        <td id="td2" width="80%">Ethernet 10 / 100 / 1000 Base TX / USB 2.0 haut débit </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Connexion </td>
+                        <td id="td1" width="80%">USB, Ethernet, Réseau </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Niveau sonore</td>
+                        <td id="td2" width="80%">Moins de 52 dBA (impression), bruit de fond uniquement (moins de 26 dBA) (en veille)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Volume mensuel maximum</td>
+                        <td id="td1" width="80%">80.000 pages</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Dimensions (L x P x H) </td>
+                        <td id="td2" width="80%">366 x 368 x 272.9 mm </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Poids </td>
+                        <td id="td1" width="80%">10.09 kg (avec toner) / 8.81 kg (sans toner) </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Consommation</td>
+                        <td id="td2" width="80%">1.4 W (veille) / 60 W (prêt) / 550 W (AVG actif) </td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Impression</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Vitesse A4 N&B </td>
+                        <td id="td1" width="80%">35 ppm en A4 (37 ppm en Letter) </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Temps de sortie 1ère impression </td>
+                        <td id="td2" width="80%">6.5 sec </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Résolution </td>
+                        <td id="td1" width="80%">1200 x 1200 dpi </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Langage(s) d'impression</td>
+                        <td id="td2" width="80%">PostScript3, PCL6 / 5e, IBM ProPrinter, EPSON </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Recto Verso</td>
+                        <td id="td1" width="80%">Intégrée</td>
+                    </tr>
+               </tbody>    
+            </table>
+        </div>
+        <div id="contentTable3" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Gestion du papier</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Entrée papier </td>
+                        <td id="td1" width="80%">Bac 250 feuilles, bac polyvalent 50 feuilles</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Sortie papier</td>
+                        <td id="td2" width="80%">150 feuilles verso, 1 feuille recto</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Type</td>
+                        <td id="td1" width="80%">Papier ordinaire, fin, épais, très épais, coton, couleur, enveloppe, transparents, préimprimé, recyclé, étiquettes, bond, papier renforcé, archive</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Format </td>
+                        <td id="td2" width="80%">76 x 127 mm (3" x 5") - 216 x 356 mm (8.5" x 14") / (Envelope: Monarch / No.10 / DL / C5 / C6) </td>
+                    </tr>
+               </tbody>     
+            </table>
+        </div>
+        <div id="contentTable4" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Autres</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Options</td>
+                        <td id="td1" width="80%">Bac 520 feuilles de 80 g/m² (bac 550 feuilles de 75 g/m²) / mémoire 512 MB / connecteur parallèle IEEE 1284 B</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
