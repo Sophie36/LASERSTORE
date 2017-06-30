@@ -1,0 +1,486 @@
+<meta charset="utf-8" />                  
+    <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>     
+    <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+        <h2 id="h2produit">Caractéristiques</h2>
+            <ul id="ulproduit">
+                <li id="liproduit">SAMSUNG SGH-I8000 Omnia II Noir</li>
+                <br />
+            </ul>
+<br /><br /><br /><br /><br />
+<h2 id="h2produit"> Présentation </h2>
+            <p>Téléphone portable - 128g - Quadri bandes - 3G+ - Ecran 3.7" Amoled tactile résistif - Bluetooth 2.0/Stéréo - USB - Wifi - GPS - Appareil photo 5 mégapixels - Windows Mobile 6.5 - Lecteur de cartes Micro SD HC - Carte 8 Go incluse - Dimensions: 118 x 60 x 11.9 mm - Coloris: Noir<br>Le SAMSUNG SGH-I8000 Omnia II incarne la perfection en termes de design et d’innovation, avec ces lignes épurées et son look luxueux ultra fin et stylé. Véritable bureau mobile, le SAMSUNG SGH-I8000 Omnia II dispose du système d’exploitation Windows Mobile 6.5, qui vous permettra une communication parfaite avec un PC. Grâce à la technologie TouchWiz et à l’interface Cube, vous pourrez personnaliser votre SAMSUNG à volonté selon vos désirs. En outre, le grand écran tactile AMOLED 3,7", l'importante mémoire interne, le récepteur GPS intégré et l’appareil photo 5 MP (doté des technologies double flash LED, détection du sourire et du visage et prise de vue panoramique automatique) fait de le SAMSUNG SGH-I8000 Omnia II, la dernière expérience multimédia à découvrir absolument.</p>
+<h3 id="h2produit">Ecran tactile</h3>
+            <p>Le SAMSUNG SGH-I8000 Omnia II possède un écran AMOLED 3,7” ultra-brillant qui vous offrira une expérience visuelle sans précédent. Il offre une luminosité à couper le souffle et des couleurs vivantes et tout cela dans la paume de votre main. Sa résolution WVGA vous permet de visionner des pages web, des photos et des vidéos avec une netteté incroyable. Où que vous soyez, l’écran de grande qualité du SAMSUNG SGH-I8000 Omnia II est parfaitement lisible, même en plein soleil. Prenez-le entre vos mains, vous n’en croirez pas vos yeux!</p> 
+<h3 id="h2produit">Restez connecté</h3>
+            <p>Le SAMSUNG SGH-I8000 Omnia II vous apporte l'opportunité de faire l’expérience d’un chargement plus rapide des pages avec sa vitesse de connexion remarquable, la plus rapide du réseau disponible pendant que les technologies Wi-Fi et 3G+ (HSDPA) vous permettent de rester connecté. De plus, avec le zoom à un doigt, vous pourrez faire un gros plan sur vos sites favoris en tenant simplement l’appareil dans une main. La navigation par onglet vous aide, en outre, à faire plusieurs choses en même temps.</p>
+<h3 id="h2produit">GPS</h3>
+            <p>Le SAMSUNG SGH-I8000 Omnia II vous met au défi de réussir à vous perdre! Il vous propose ainsi de multiples cartes pour conducteurs et piétons vous aident à retrouver votre chemin, quels que soient les détours que vous avez faits. La vue réaliste en 3D et l'indication des monuments vous permet,de plus, d'identifier des endroits définis avec une grande précision. L’aide avancée vous offre de plus des informations utiles qui font de vos trajets quotidiens un vrai plaisir.  </p>
+<h3 id="h2produit">Appareil photo numérique</h3>
+            <p>Le SAMSUNG SGH-I8000 Omnia II est doté d’un appareil photo 5 MP avec double LED qui fait des photos incomparables. Les fonctions sourire, panorama, action et mosaïque vous confèrent un panel de possibilités remarquable. Vous aurez également la possibilité d'immortaliser les meilleurs moments de votre vie dans une impressionnante qualité vidéo, soit 480 p, comme un DVD. Les outils avancés de retouche de photo vous permettent, de plus,  de flirter avec la perfection. Un must!</p> 
+<h3 id="h2produit">Mobilité professionnelle</h3>
+            <p>Plus besoin de pointer avec votre nouveau SAMSUNG SGH-I800 Omnia II, qui devient un véritable bureau mobile. Il vous permet, ainsi de visionner et d’éditer des documents avec Microsoft Office, de recevoir des emails complets à n'importe quel moment et de personnaliser votre bureau mobile avec des applications de votre choix. Et pour tirer le maximum de votre bureau mobile, vous pouvez également utiliser la mise à jour Windows Mobile 6.5 chez vous. Un must! </p>
+<h3 id="h2produit">Longue durée</h3>
+            <p>Le SAMSUNG SGH-I8000 Omnia II a été spécialement conçu pour vous aider à être efficace tout au long de la journée. Il est doté d‘une batterie remplaçable de 1.500 mAh pour une durée extra longue, même pour le multimédia. Il vous offre également 48 GB de mémoire, pour que vous puissiez stocker un véritable trésor de contenus à avoir toujours sous la main. En outre, avec une durée en veille allant jusqu’à 430 heures et 10 heures en conversation, le SAMSUNG SGH-I8000 Omnia II ne vous laisse jamais tomber.</p>                        
+            
+        <h2 id="h2produit">Caractéristiques techniques </h2>
+            <br />
+<div id="tabs-table">
+    <div id="tabs">
+        <div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Caractéristiques Principales</span></div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Système</span></div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Ecran</span></div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Multimédia</span></div>
+        </br>
+        <div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Réseaux et connectivité</span></div>
+        <div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Messages</span></div>
+        <div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Personnalisation</span></div>
+        </br>
+        <div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Gestion des appels</span></div>
+        <div id="choix9" onclick="toggle_div('contentTable9'); newid(this)"><span>Fonctionnalités</span></div>
+        <div id="choix10" onclick="toggle_div('contentTable10'); newid(this)"><span>Services Windows</span></div>
+        <div id="choix11" onclick="toggle_div('contentTable11'); newid(this)"><span>Garantie</span></div>
+    </div>
+    <div id="table">
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Caractéristiques principales</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Dimensions</td>
+                        <td id="td1" width="80%">112.6 x 57.8 x 15.9 mm</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Poids</td>
+                        <td id="td2" width="80%">128g</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Batterie</td>
+                        <td id="td1" width="80%">Li-ion 1500 mAh </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%"> Autonomie en veille</td>
+                        <td id="td2" width="80%">470 h </td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%"> Autonomie en communication</td>
+                        <td id="td1" width="80%">6 h 30</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%"> DAS</td>
+                        <td id="td2" width="80%"> 0.168 W/kg</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Couleur</td>
+                        <td id="td1" width="80%">Noire</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Système</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Système d'exploitation</td>
+                        <td id="td1" width="80%">Windows mobile</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%"> Vitesse Processeur</td>
+                        <td id="td2" width="80%">800 MHz</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable3" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Ecran</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Taille d'écran</td>
+                        <td id="td1" width="80%">3.7"</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%"> Type d'écran</td>
+                        <td id="td2" width="80%">Tactile résistif</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Résolution</td>
+                        <td id="td1" width="80%">480 x 800 pixels </td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Nombre de couleurs</td>
+                        <td id="td2" width="80%">AMOLED 65 000 couleurs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable4" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Multimédia</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Photo</td>
+                        <td id="td1" width="80%">Résolution: 5 MP<br>Zoom numérique: x4<br>Autofocus<br>Flash: Dual Power LED<br>Détecteur de sourire<br>Mode Panorama<br>Formats images supportés: WBMP,BMP,PNG,GIF,A-GIF,JPEG</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Vidéo</td>
+                        <td id="td1" width="80%">Résolution: SD-720 x 480 pixels<br>Formats vidéos supportés: 3gp, MPEG4, WMV,Xvid,DivX</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Musique</td>
+                        <td id="td1" width="80%">Port Jack 3,5 mm<br>Technologie DNSe<br>Reconnaissance audio<br>Radio FM avec fonction RDS<br>Lecteur audio: MP3,AAC,AAC+,e-AAC+,WMA<br>WMDRM/MTP</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">GPS</td>
+                        <td id="td1" width="80%">A-GPS<br>Geotagging</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Autres applications</td>
+                        <td id="td1" width="80%">Java MIDP- 2.1<br>Jeux<br>Navigateur WAP/Internet<br>Lecteur RSS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable5" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Réseaux et connectivité</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Réseaux et connectivité</td>
+                        <td id="td1" width="80%">Quadri bandes: 850/900/1800/1900 MHz<br>HSDPA/HSUPA<br>Débit modem max Dowload/Upload<br>Bluetooth 2.0/Stéréo<br>USB 2.0<br>Wi-Fi 802.11b / g<br>Certification DLNA<br>Sortie TV</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable6" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Messages</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Messages</td>
+                        <td id="td1" width="80%"> SMS/MMS<br>Messagerie instantanée: Windows Live Messenger<br>Logiciel de saisie rapide (T9)<br>Push e-mail</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable7" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Personnalisation</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Personnalisation</td>
+                        <td id="td1" width="80%"> Langues: 15<br>Personnalisation de l appelant<br>Sonneries MP3<br>Raccourcis / Liens dynamiques</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable8" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Gestion des appels</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%"> Double appel<br>Groupe d appel<br>Identification de l appelant<br>Transfert d appel<br>Répertoire d appel Restreint (FDN)<br>Répertoire Service Opérateur (SDN)<br>Numéros abrégés Oui<br>Multi conférence Oui<br>Simulateur d'appel </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable9" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Fonctionnalités</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Fonctionnalités</td>
+                        <td id="td1" width="80%">Mains-libres<br>Visiophonie<br>Mode Hors ligne<br>Calculatrice/Convertisseur<br>Capacité du répertoire SIM + Mémoire du téléphone<br>Réveil/Alarme<br>Mémo vocal<br>Horloge Universelle<br>SIM Tool Kit</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable10" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Services Windows</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Services Windows</td>
+                        <td id="td1" width="80%"> Microsoft® Office Mobile: Word, Excel, Power Point, PDF<br>Microsoft® Active Sync<br>Windows Live Services<br>Microsoft® My Phone<br>Windows® Marketplace<br>Navigateur Internet Opéra 9.5 / Internet Explorer Mobile<br>Gestionnaire de tâches</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable11" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Garantie</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Garantie</td>
+                        <td id="td1" width="80%">Garantie 1 an constructeur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,476 @@
+<meta charset="utf-8" />                  
+    <style type="text/css">
+
+        #div{
+            display:block;
+        }
+
+        :lang(fr){
+            quotes: '\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';
+        }
+
+        *{
+            padding:0px;
+            text-decoration:none;
+            font-size: 1em;
+            outline:none;
+        }
+
+        div{
+            display:block;
+        }
+
+        h3{
+            font-size:15px;
+        }
+
+        #titre1{
+            font-size:26px;
+            font-weight: bold;
+        }
+
+        #section{
+            display:block;
+            width:717px;
+            margin:0px auto;
+            background-color:white;
+            position:relative;
+            z-index:1000;
+            height:max-content;
+            padding-top:20px;
+        }
+
+        a:link{
+            text-decoration: none;
+        }
+
+        a{
+            /*color:#528DC7;*/
+            outline:none;
+            color:inherit;
+        }
+
+        a:link, a:visited, a:hover, a:active, a:focus {
+            text-decoration: none;
+        }
+
+        a, img, a img, form{
+            border: none;
+        }
+
+        #ulproduit{
+            display: block;
+            list-style-type: disc;
+            -webkit-margin-before: 1em;
+            -webkit-margin-after: 1em;
+            -webkit-margin-start: 0px;
+            -webkit-margin-end: 0px;
+            -webkit-padding-start: 40px;
+        }
+
+        #ulproduit{
+            list-style: none;
+        }
+
+        #ulproduit{
+            margin-left: 2.2em;
+        }
+
+        #ulproduit {
+            list-style: disc outside;
+        }
+
+        #liproduit {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+
+        #tableauCarac{
+            border-collapse:collapse;
+            width:500px;
+            padding:10px;
+            margin:10px 10px 0px 10px;
+            color:black;
+        }
+
+        #td1, #td2{
+            border:1px solid black;
+            text-align:left;
+            padding:4px;
+            font-size:9.5px;
+        }
+
+        #th{
+            border-bottom:1px solid black;
+            padding:4px;
+            text-align:left;
+            text-transform:uppercase;
+        }
+
+        #td1{
+            background-color:#C9D3DD;
+        }
+
+        #td2{
+            background-color:white;
+        }
+
+        #trth:nth-child(even){
+            background-color:white;
+        }
+
+        /*------------------------------------------------------------------------------------*/
+
+        #tabs{
+            width:600px;
+            text-align:center;
+            font-size:11px;
+        }
+
+        #tabs-table{
+            height:460px;
+        }
+
+        #tabs-table #tabs div{
+            background-color: #040403;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #tabs-table #tabs div{
+            background-color:#E6E6E6;
+            cursor: pointer;
+            color: black;
+            list-style-type: none;
+            padding: 5px 7px;
+            display: inline;
+            line-height: 35px;
+            border:1px solid black;
+            margin-left:3px;
+            margin-right:2px;
+        }
+
+        #tabs-table #tabs #ongletselect{
+            background-color:#CDCDCD;
+        }
+
+
+        #table{
+            background-color: white;
+            padding: 10px 15px 15px 0px;
+            width:80%;
+        }
+
+        #table #contentTable1 table:last-of-type{
+            margin-bottom:0;
+        }
+
+        #tableauCarac{
+            background-color: transparent;
+        }
+
+        #tableauCarac{
+            border-spacing:0;
+            border-collapse: collapse;
+        }
+
+        table{
+            display: table;
+            border-collapse: separate;
+            border-spacing:0px;
+            border-color:grey;
+        }
+
+        #tr1, #tr2 {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: inherit;
+        }
+
+        #th:first-child {
+            -moz-border-radius: 6px 0 0 0;
+        }
+
+        #th {
+            text-align: left;
+        }
+
+        td, th {
+            padding: 0;
+        }
+
+        .mask_element {
+            display: none;
+        }
+
+        p, #ulproduit, #h2produit, #h3produit{
+            width:600px;
+        }
+
+        #h2produit{
+            font-size:20px;
+        }
+
+        p{
+            font-size:12px;
+        }
+
+        #liproduit{
+            margin-left:150px;
+            font-size:13px;
+        }
+
+        #h3produit{
+            margin-bottom:5px;
+        }
+
+    </style>     
+    <script type="text/javascript">
+
+        function toggle_div(id) {
+            var divs = document.getElementsByTagName('div');
+            var id = document.getElementById(id);
+            for(var no=0;no<divs.length;no++){
+                if(divs[ no].className=='mask_element'){ // on cible les divisions dont la class est 'mask_element'
+                    divs[ no].style.display = "none"; // on les masque tous
+                }
+            } 
+            id.style.display = "block"; // on affiche le div appelé
+        }
+
+        function newid(obj){
+          document.getElementById("ongletselect").id = "";
+          obj.id = "ongletselect";
+        }
+    </script>
+        <h2 id="h2produit">Caractéristiques</h2>
+            <ul id="ulproduit">
+                <li id="liproduit">Écran plat large DELL E1910 19 pouces</li>
+                <br />
+            </ul>
+<br /><br /><br /><br /><br />
+<h2 id="h2produit"> Présentation </h2>
+            <p>Bénéficiez des avantages d'un écran large<br>
+
+Profitez de la productivité d'un grand écran écoénergétique ENERGY STARTM  à votre poste de travail avec l'écran large DellTM  E1910 19 pouces. Ses fonctionnalités principales :<br>
+
+    Zone d'affichage large et nette : Affichez davantage de contenu facilement avec un format d'image d'écran large 16:9, une taille d'image visible (VIS) de 19 pouces et une résolution maximale de 1 440 x 900.<br>
+    Prise en charge multimédia : Bénéficiez d'excellentes performances multimédias, vidéo et graphiques grâce aux ports VGA (Video Graphics Array) et DVI (Digital Visual Interface) avec les câbles inclus.<br>
+    Conception à haute efficacité énergétique Certifié ENERGY STAR® , fabriqué avec des matériaux contenant peu d'halogène et avec une consommation électrique 40 % inférieure à celle du modèle précédent
+</p>
+            
+        <h2 id="h2produit">Caractéristiques techniques </h2>
+            <br />
+<div id="tabs-table">
+    <div id="tabs">
+        <div id="ongletselect" onclick="toggle_div('contentTable1'); newid(this)"><span>Ecran</span></div>
+        <div id="choix2" onclick="toggle_div('contentTable2'); newid(this)"><span>Connectivité</span></div>
+        <div id="choix3" onclick="toggle_div('contentTable3'); newid(this)"><span>Socle</span></div>
+        <div id="choix4" onclick="toggle_div('contentTable4'); newid(this)"><span>Sécurité</span></div>
+        </br>
+        <div id="choix5" onclick="toggle_div('contentTable5'); newid(this)"><span>Couleur, taille, poids</span></div>
+        <div id="choix6" onclick="toggle_div('contentTable6'); newid(this)"><span>Spécifications Electriques</span></div>
+        <div id="choix7" onclick="toggle_div('contentTable7'); newid(this)"><span>Spécifications Environnementales</span></div>
+        </br>
+        <div id="choix8" onclick="toggle_div('contentTable8'); newid(this)"><span>Conformité et normes</span></div>
+        <div id="choix9" onclick="toggle_div('contentTable9'); newid(this)"><span>Contenu de l'emballage</span></div>
+        
+    </div>
+    <div id="table">
+        <div id="contentTable1" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Ecran</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Taille de l'écran</td>
+                        <td id="td1" width="80%">Zone d'affichage de 19 pouces (482,6 mm)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Format d'image</td>
+                        <td id="td2" width="80%">Écran large (16:10)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Type d'écran</td>
+                        <td id="td1" width="80%">TN - Twisted Nematic</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Résolution optimale</td>
+                        <td id="td2" width="80%">1 440 x 900 à 60 Hz</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Taux de contraste</td>
+                        <td id="td1" width="80%">1000:1 (standard)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Luminosité</td>
+                        <td id="td2" width="80%">300 cd/m2 (standard)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Temps de réponse</td>
+                        <td id="td1" width="80%">Écran 5 ms standard</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Angle d'affichage</td>
+                        <td id="td2" width="80%">160° vertical / 160° horizontal</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Prise en charge des couleurs</td>
+                        <td id="td1" width="80%">16,7 millions de couleurs</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Espacement des pixels</td>
+                        <td id="td2" width="80%">0,2835 mm</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Type de périphérique</td>
+                        <td id="td1" width="80%">Écran plat</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable2" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Connectivité</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Connectivité</td>
+                        <td id="td1" width="80%">Port VGA (Video Graphics Array)<br>Interface vidéo numérique (DVI-D)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable3" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Socle</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Socle</td>
+                        <td id="td1" width="80%">Inclinaison réglable<br>Affichage à l'écran (On-screen display, OSD) et gestion des câbles intégrée</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable4" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Sécurité</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Sécurité</td>
+                        <td id="td1" width="80%">Port de sécurité (verrou de câble vendu séparément)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable5" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Couleur, Taille et Poids</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Couleur</td>
+                        <td id="td1" width="80%">83 % (standard)2 CIE 1976</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Dimensions (H x L x P)</td>
+                        <td id="td2" width="80%">14,32 pouces (363,74 mm) x 17,45 pouces (442,85 mm) x 5,78 pouces (146,86 mm)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Poids (écran uniquement, pour support de montage VESA)</td>
+                        <td id="td1" width="80%">3,59 kg (7,91 livres)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Poids (emballage inclus)</td>
+                        <td id="td2" width="80%">5,76 kg (12,70 livres)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable6" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Spéfications Electriques</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Tension nécessaire</td>
+                        <td id="td1" width="80%">100 à 240 V CA / 50 Hz ou 60 Hz +/- 3 Hz / 1,6 A (max.)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Consommation électrique</td>
+                        <td id="td2" width="80%">25 W (standard)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable7" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Spécifications Environnementales</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Température en fonctionnement</td>
+                        <td id="td1" width="80%">0 à 40° C (32 à 104° F)</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Température hors fonctionnement</td>
+                        <td id="td2" width="80%">Stockage : -20 à 60 °C (-4 à 140 °F)<br>Transport : -20 à 60 °C (-4 à 140 °F)</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Taux d'humidité en fonctionnement</td>
+                        <td id="td1" width="80%">10 à 80 % sans condensation</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Taux d'humidité hors fonctionnement</td>
+                        <td id="td2" width="80%">Stockage : 5 à 90 % sans condensation
+<br>Transport : 5 à 90 % sans condensation</td>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Altitude en fonctionnement </td>
+                        <td id="td1" width="80%">3 657,6 m (12 000 pieds) max.</td>
+                    </tr>
+                    <tr id="tr2">
+                        <td id="td2" width="30%">Altitude hors fonctionnement</td>
+                        <td id="td2" width="80%">12 192 m (40 000 pieds) max.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable8" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Conformité et normes</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Conformité et normes</td>
+                        <td id="td1" width="80%">TCO '03<br>Energy Star<br>EPEAT Gold<br>Matériaux à faible teneur en halogène</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contentTable9" class="mask_element">
+            <table id="tableauCarac">
+                <tbody>
+                    <tr id="trth">
+                        <th id="th" width="30%">Contenu de l'emballage</th>
+                    </tr>
+                    <tr id="tr1">
+                        <td id="td1" width="30%">Contenu de l'emballage</td>
+                        <td id="td1" width="80%">Écran plat E1910<br>Écran avec socle<br>Câble d'alimentation<br>Câble DVI<br>Câble VGA (relié au moniteur)<br>Support documentation et pilotes<br>Guide d'installation rapide<br>Consignes de sécurité</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
